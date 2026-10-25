@@ -36,9 +36,17 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
 % every name-style macro routes through, so this also works on moderncv 2.3.1
 % (Debian/Ubuntu apt), which has no \firstnamestyle/\lastnamestyle at all.
 \renewcommand*{\namefont}{\fontsize{34}{36}\bfseries\upshape}
-\colorlet{firstnamecolor}{color1}
-\colorlet{lastnamecolor}{color1}
-\colorlet{namecolor}{color1}
+% GitHub palette on a white page: fg #1F2328, accent blue #0969DA, muted #59636E.
+\definecolor{ghfg}{HTML}{1F2328}
+\definecolor{ghblue}{HTML}{0969DA}
+\definecolor{ghmuted}{HTML}{59636E}
+\colorlet{color0}{ghfg}
+\colorlet{color1}{ghblue}
+\colorlet{color2}{ghmuted}
+\colorlet{firstnamecolor}{ghfg}
+\colorlet{lastnamecolor}{ghfg}
+\colorlet{namecolor}{ghfg}
+\AtBeginDocument{\color{ghfg}}
 \renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
 
 \usepackage[utf8]{inputenc}
@@ -49,6 +57,9 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
 % right. moderncv 2.5 loads T1 itself under pdflatex; 2.3.1 (Debian/Ubuntu apt)
 % does not. \ifpdftex comes from iftex, which every moderncv version loads.
 \ifpdftex\usepackage[T1]{fontenc}\fi
+% Helvetica: TeX Gyre Heros (metric-compatible Helvetica clone shipped with
+% MiKTeX/TeX Live) under lualatex; Type1 helvet under the pdflatex fallback.
+\ifpdftex\usepackage{helvet}\else\usepackage{fontspec}\setmainfont{TeX Gyre Heros}\setsansfont{TeX Gyre Heros}\fi
 % moderncv loads hyperref itself in an \AtEndPreamble hook, so \hypersetup
 % must go in an \AtEndPreamble of our own: on moderncv < 2.4 a top-level
 % \usepackage{hyperref} clashes with the class's own
@@ -56,9 +67,9 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
 % through \PassOptionsToPackage instead, which is what removes that clash.
 \AtEndPreamble{\hypersetup{
     colorlinks=true,
-    linkcolor=blue,
+    linkcolor=ghblue,
     filecolor=magenta,
-    urlcolor=blue,
+    urlcolor=ghblue,
     pdftitle={Carlos Hernando Lozano Perez - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
