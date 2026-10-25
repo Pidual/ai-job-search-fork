@@ -1,0 +1,14 @@
+{
+  "name": "torre-search-cli",
+  "version": "1.0.0",
+  "description": "CLI for searching jobs and fetching job details from Torre (torre.ai / search.torre.co)",
+  "type": "module",
+  "scripts": {
+    "test": "bun test --timeout 30000",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.4.0"
+  }
+}
