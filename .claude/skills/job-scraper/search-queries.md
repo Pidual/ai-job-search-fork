@@ -1,80 +1,105 @@
 # Search Queries for Job Scraper
 
-<!-- SETUP: Customize these queries based on your skills, target roles, and location -->
+<!-- Configured by /setup on 2026-10-25 for Carlos Hernando Lozano Pérez: GRC / InfoSec first,
+Cloud Security / AWS second, SOC third. Market: Colombia (any city) + remote. -->
 
 ## Installed portal CLIs (primary for `/scrape`)
 
-`/scrape` discovers every portal skill under `.agents/skills/*/SKILL.md` and runs its CLI first. Shipped country-agnostic CLIs include `linkedin-search` and `freehire-search`; Danish demos and any skill you add with `/add-portal` are included the same way. You do **not** need a matching `site:` line below for those CLIs to run.
+`/scrape` discovers every portal skill under `.agents/skills/*/SKILL.md` and runs its CLI first. For this profile the important ones are **`linkedin-search`**, **`computrabajo-search`** and **`elempleo-search`** (Colombia), plus the remote-job boards already enabled (Torre, ticjob, Remotive, WeWorkRemotely, Himalayas, Jobicy, etc.). The Danish portals (Jobindex, Jobbank, Jobdanmark, Jobnet) stay **disabled**.
 
-The `site:` query templates in this file are the **WebSearch fallback** — for portals without a CLI, company career pages, or when a CLI fails.
+The `site:` query templates in this file are the **WebSearch fallback** - for portals without a CLI, company career pages, or when a CLI fails.
 
-**Language scope:** write every query category in every language listed in your CLAUDE.md Languages table (typically 1-2, sometimes more). A posting requiring a language you have *not* declared, as a job condition, is excluded before scoring; a posting requiring a *higher level* than you declared in a language you *do* work in is flagged for your own judgment, not excluded — see `04-job-evaluation.md`'s Language Gate, the single source of truth for this rule. Translate each category's keywords rather than machine-translating word-for-word (e.g. "Frontend Developer" -> "Desarrollador Frontend", not a literal word-for-word translation) if you work in more than one language.
+**Language scope:** every category is written in **Spanish and English** (the two languages in the CLAUDE.md Languages table: Spanish native, English C2). Colombian boards mostly post in Spanish; remote/international roles mostly in English.
 
 ## Search Sites
 
-Primary (your market's job boards - scaffold one with `/add-portal`):
-- **[YOUR_JOB_BOARD]** - your market's largest general job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: [YOUR_COUNTRY] / [YOUR_CITY]); also covered by `linkedin-search` CLI
-- **[YOUR_INDUSTRY_JOB_BOARD]** - a niche/industry board for your field (optional)
-- **[YOUR_ADDITIONAL_JOB_BOARD]** - another major board for your market (optional)
+Primary:
+- **co.computrabajo.com** - Colombia's largest general job board (`computrabajo-search` CLI)
+- **elempleo.com/co** - major Colombian board (`elempleo-search` CLI)
+- **linkedin.com/jobs** - filter: Colombia / Bogotá / Medellín / Remote (`linkedin-search` CLI)
+- **torre.ai**, **ticjob.co** - LatAm tech and remote roles (CLIs enabled)
 
 Secondary (company career pages via Google):
-- Direct Google searches with `site:` filters for known target companies
+- Banks and fintech: Bancolombia, Banco de Bogotá, Davivienda, BBVA Colombia, Grupo Aval, Nu Colombia, Rappi
+- Consultancies / MSSPs: Deloitte, EY, KPMG, PwC, Accenture, Globant, EPAM, Thoughtworks, Sophos Solutions, Ikusi
+- Remote US/EU SaaS companies hiring LatAm GRC talent (staffing firms like OperationsArmy, Toptal, BairesDev)
 
 ## Query Categories
 
-Queries are grouped by priority. Write **each category in every language from your Languages table** (see Language scope above). Combine each query with your location terms (e.g. your city, region, or metro area) where the site supports it.
+Organized by function. Combine with location terms (Colombia, Bogotá, Medellín, Cali, remoto/remote) where the site supports it.
 
-**Organize by function, not job title.** The same underlying work carries different titles across companies and markets (a "Data Scientist" role at one employer may be posted as "Insights Analyst" or "Data Consultant" at another). Name each priority category after the function it covers, and list several plausible job titles as query variants within that category rather than betting an entire priority tier on one exact title string.
+### Priority 1: GRC / Information Security Analyst (best current fit)
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
-
-These match your strongest and most desired career direction.
+Compliance, ISO 27001, SOC 2, risk, audit, security policy work.
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_2]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_COUNTRY]
+"analista de seguridad de la información" Colombia
+"analista GRC" OR "analista de riesgos de seguridad" Colombia
+"ISO 27001" analista Colombia
+"analista de cumplimiento" seguridad de la información
+"auditor interno ISO 27001" OR "SGSI" analista
+"Information Security Analyst" Colombia OR LATAM remote
+"GRC Analyst" OR "Compliance Analyst" "SOC 2" remote LATAM
+"Security Compliance Analyst" ISO 27001 remote
+site:linkedin.com/jobs "Information Security Analyst" Colombia
+site:co.computrabajo.com "seguridad de la información"
+site:elempleo.com "seguridad de la información" analista
 ```
 
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
+### Priority 2: Cloud Security / AWS (strongest desire)
 
-These match your domain expertise.
-
-```
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
-```
-
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
-
-Adjacent roles you could pivot into.
+Roles that combine security with hands-on AWS.
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
+"analista de seguridad cloud" OR "seguridad en la nube" AWS Colombia
+"ingeniero de seguridad cloud" junior Colombia
+"AWS" "seguridad" analista OR ingeniero junior Colombia
+"Cloud Security Analyst" OR "Cloud Security Engineer" junior remote LATAM
+"AWS Security" junior OR associate remote
+"Cloud Compliance" OR "Cloud GRC" analyst remote
+"Junior Cloud Engineer" AWS Colombia
+site:linkedin.com/jobs "Cloud Security" Colombia
 ```
 
-### Priority 4: Broader Technical / Consulting
+### Priority 3: SOC Analyst
 
-Wider net for general technical roles.
+Monitoring, SIEM, detection - entry level.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+"analista SOC" OR "analista de ciberseguridad" junior Colombia
+"analista de monitoreo de seguridad" SIEM Colombia
+"SOC Analyst" "Level 1" OR "L1" OR junior Colombia OR remote LATAM
+"Cybersecurity Analyst" junior Colombia
+site:co.computrabajo.com "analista SOC"
+site:elempleo.com ciberseguridad analista
 ```
+
+### Priority 4: Broader - adjacent roles (wider net)
+
+Roles where the GRC + automation + IAM/cloud mix still fits. Score carefully against the motivation filter (avoid pure ticket queues).
+
+```
+"analista de ciberseguridad" Colombia
+"IAM Analyst" OR "analista de identidades y accesos" Colombia
+"Technology Risk Analyst" OR "analista de riesgo tecnológico" Colombia
+"IT Auditor" OR "auditor de sistemas" junior Colombia
+"Security Analyst" "Power Platform" OR automation
+"Third-Party Risk Analyst" OR "Vendor Security" remote
+```
+
+**Suggested extras worth trying** (not yet confirmed by the candidate): Technology Risk / IT Audit roles at Big Four firms (strong ISO 27001 overlap), Third-Party / Vendor Risk roles at SaaS companies (overlap with SOC 2 + Vanta work), and Security Automation roles (SGSI+ shows automation strength).
 
 ## Location Filter
 
-When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+Candidate is based in Yopal, Casanare, and will relocate within Colombia.
+- **Ideal:** Fully remote (Colombia-eligible or international/US company hiring LatAm)
+- **Acceptable:** On-site or hybrid in any Colombian city (Bogotá, Medellín, Cali, Barranquilla, Bucaramanga, Tunja, Yopal, etc.)
+- **Borderline:** Roles requiring relocation outside Colombia - flag for discussion
+- **Too far:** Roles requiring work authorization the candidate lacks (e.g. US/EU on-site with citizenship/visa requirements)
+
+## Pay Filter
+
+Minimum **COP 3,500,000/month**. Exclude postings that state pay below this; keep postings with unstated pay. Flag short fixed-term / project-only contracts (candidate wants long-term roles).
 
 ## Language Filter
 
@@ -87,4 +112,5 @@ Only include jobs posted within the last 14 days, or with an application deadlin
 ## Adapting Queries
 
 If the user specifies a focus area, select queries from the matching category and also generate 2-3 custom queries for that focus. For example:
-- "/scrape [focus_area]" -> relevant category queries + custom focus-specific queries
+- "/scrape cloud" -> Priority 2 queries + custom AWS/cloud-security queries
+- "/scrape remoto" -> all categories restricted to remote postings

@@ -1,8 +1,7 @@
-%% Example CV - [YOUR_NAME]
+%% Example CV - Carlos Hernando Lozano Perez
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
 %%
-%% SETUP: Run /setup to populate this with your actual information.
 %% Compile with: lualatex main_example.tex
 %% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
 
@@ -40,7 +39,7 @@
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Carlos Hernando Lozano Perez - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -50,13 +49,15 @@
 \usepackage{import}
 
 % personal data
-\name{[First]}{[Last]}
+\name{Carlos Hernando}{Lozano P\'erez}
 % If you have no address to list, DELETE this whole line. \address{}{}{} fails
 % with "There's no line here to end" on every moderncv version.
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\address{Yopal, Casanare, Colombia}{}{}
+\phone[mobile]{+57 312 463 2164}
+\email{carlosmapache1@gmail.com}
+\extrainfo{\href{https://www.linkedin.com/in/carloslozanoperez/}{LinkedIn}, \href{https://github.com/Pidual}{GitHub}}
+
+\usepackage{needspace}
 
 \begin{document}
 
@@ -67,7 +68,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{Information Security Analyst and Systems Engineer with hands-on GRC experience across a Colombian bank and a US technology company. At Banco de Bogot\'a's Security and Cybersecurity CoE I built SGSI+, a Power Platform solution that automated ISO/IEC 27001:2022 audit evidence management: 1,361 evidence requests at a 90.4\% delivery rate, 9 automated workflows, recognized by the external auditor. Currently supporting SOC 2 and ISO 27001 compliance at Profound with Vanta, and building hands-on AWS skills (38 labs, EPAM Cloud Platform Engineer program). CompTIA Security+ certified, C2 English.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -77,15 +78,15 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{GRC \& Compliance}: ISO/IEC 27001:2022 ISMS, SOC 2, Vanta, evidence and control management, findings and action-plan tracking, security policy and procedure documentation, audit support.
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Compliance Automation}: Microsoft Power Platform (Power Apps, Power Automate, Power BI, SharePoint); Power BI data modeling with Power Query and star schemas.
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{Cloud (AWS)}: IAM (policies, conditions, policy evaluation, role chaining), VPC peering and Transit Gateway, S3 with KMS, Lambda, API Gateway, RDS Multi-AZ, DynamoDB, DMS, ECS, CloudWatch/SNS, CloudFormation, CodeBuild/CodeDeploy; Terraform (basic).
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{Security Tooling (homelab)}: OPNsense firewall and VLANs, VPN, ELK Stack (SIEM), Nessus, OpenVAS, Wireshark, Nmap, Kali Linux, Metasploit, basic Active Directory, Proxmox VE.
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{Development}: Python, SQL, Java, Spring Boot, JWT, REST APIs, Docker, Git, Linux; PyTorch and ONNX; agentic coding with Claude Code.
 
 \end{itemize}
 
@@ -97,34 +98,36 @@
 \vspace{3pt}
 \begin{itemize}
 
-% --- Most Recent Role ---
-\item{\cventry{[YYYY-Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{Sep 2026-Present}{Information Security Analyst}{Profound (contracted through OperationsArmy)}{Remote, US}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1 - be specific, use numbers where possible]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
-    \item {[Achievement or responsibility 4]}
+    \item Support SOC 2 and ISO 27001 compliance: track security controls, collect evidence and assist audits, using Vanta to monitor each framework's progress.
+    \item Maintain and document security policies and procedures.
+    \item Work with Engineering, Legal and Product to gather and validate security information in an English-speaking remote environment.
 \end{itemize}}}
 
 \vspace{3pt}
 
-% --- Previous Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\needspace{5\baselineskip}
+\item{\cventry{Jan 2025-Jan 2026}{Business Intern (Aprendiz Practicante Empresarial)}{Banco de Bogot\'a, Security \& Cybersecurity CoE}{Bogot\'a, Colombia}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
+    \item Designed and built \textbf{SGSI+} (degree thesis) on Power Apps, Power Automate, SharePoint and Power BI, replacing a spreadsheet-based ISO/IEC 27001:2022 audit workflow: 1,361 evidence requests processed at a 90.4\% delivery rate, 9 automated workflows, recognized by the external auditor.
+    \item Supported the bank's ISMS: validated audit evidence, reviewed security controls, and tracked findings and action plans with business areas.
+    \item Cleaned and transformed data with Power Query and built star-schema Power BI models and dashboards for compliance indicators.
+    \item Gathered requirements with business areas in agile teams.
 \end{itemize}}}
 
-\vspace{3pt}
+\end{itemize}
 
-% --- Earlier Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+% ============================================================
+%     PROJECTS
+% ============================================================
+
+\section{Projects}
+\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
-\end{itemize}}}
-
+\item{\textbf{\href{https://github.com/Pidual/Photo-Deletor-Extension}{ResNet50 Image Classifier}} (2026): Hand-labeled a 17,000+ image dataset, fine-tuned ResNet50 via transfer learning in PyTorch (CUDA), exported to ONNX and integrated into a browser extension for Google Photos.}
+\item{\textbf{Security Homelab} (2026): Proxmox VE with an OPNsense firewall (VLANs, port/protocol rules, VPN), Windows/Linux VMs with Active Directory, ELK log centralization, Nessus/OpenVAS scanning and Kali/Metasploit/Wireshark/Nmap testing.}
+\item{\textbf{E-commerce Backend} (2024): Java, Spring Boot and JWT REST backend with catalog, cart and orders.}
 \end{itemize}
 
 % ============================================================
@@ -135,16 +138,24 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
+\item{\cventry{2020-2026}{B.Sc. Systems and Computer Engineering (Ingeniero de Sistemas y Computaci\'on)}{Universidad Pedag\'ogica y Tecnol\'ogica de Colombia}{Tunja, Colombia}{}{\vspace{1pt}
+GPA 3.8/5.0. Thesis / internship (graded Sobresaliente): SGSI+, ISO/IEC 27001 audit automation. Colombian tarjeta profesional.
 }}
 
-\vspace{3pt}
+\end{itemize}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
-}}
+% ============================================================
+%     CERTIFICATIONS
+% ============================================================
 
+\section{Certifications}
+\vspace{1pt}
+\begin{itemize}
+\item{\textbf{\href{https://www.credly.com/badges/485adf76-e28e-4540-8a77-276ecb24b6d0/linked_in_profile}{CompTIA Security+ ce (SY0-701)}} -- CompTIA (Jun 2026, valid to Jun 2029)}
+\item{\textbf{EPAM Cloud Platform Engineer Program -- AWS} -- 38 labs passed, 2nd on course leaderboard (2026; certificate expected Dec 2026)}
+\item{\textbf{\href{https://www.coursera.org/account/accomplishments/specialization/8HCZD7Y1AMZC}{Deep Learning Specialization}} -- DeepLearning.AI (Nov 2025)}
+\item{\textbf{Foundation Level Threat Intelligence Analyst (FTIA)} -- arcX (Nov 2024)}
+\item{\textbf{\href{https://www.freecodecamp.org/certification/Pidual/back-end-development-and-apis}{Back End Development and APIs}} -- freeCodeCamp (Dec 2024)}
 \end{itemize}
 
 % ============================================================
@@ -154,27 +165,17 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 \section{Languages}
 \vspace{1pt}
 \begin{itemize}
-\item {[Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).}
+\item {Spanish (native), English (C2 -- \href{https://cert.efset.org/en/hzQH9H}{EF SET 75/100}).}
 \end{itemize}
 
 % ============================================================
-%     PUBLICATIONS (optional)
-% ============================================================
-
-\section{Publications}
-\vspace{1pt}
-\begin{itemize}
-\item {[Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
+%     HONORS AND AWARDS
 % ============================================================
 
 \section{Honors and Awards}
 \vspace{1pt}
 \begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item{\textbf{First Place} -- Hackathon, Universidad Pedag\'ogica y Tecnol\'ogica de Colombia (2026).}
 \end{itemize}
 
 % ============================================================

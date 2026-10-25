@@ -1,7 +1,5 @@
 # Job Application Assistant for Carlos Hernando Lozano Perez
 
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
 
 ## Role
 This repo is a job application workspace. Claude acts as a career advisor and application assistant for Carlos Hernando Lozano Perez, helping with:
@@ -13,79 +11,75 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
-
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
+- **Name:** Carlos Hernando Lozano Pérez
+- **Location:** Yopal, Casanare, Colombia (open to on-site/hybrid in any Colombian city; remote preferred)
+- **Contact:** +57 312 463 2164 (WhatsApp) | carlosmapache1@gmail.com | linkedin.com/in/carloslozanoperez | github.com/Pidual
 - **Languages:**
   | Language | Level |
   |----------|-------|
-  | [LANGUAGE] | [LEVEL] |
-  <!-- Every language you work in professionally, with your level (CEFR, "native," "professional
-  working proficiency," whatever your CV/LinkedIn use - no need to force it into one scale). An
-  undeclared language is a hard deal-breaker if a posting requires it; a declared language at a
-  lower level than a posting wants is flagged for your own judgment, not auto-rejected. See
-  04-job-evaluation.md's Language Gate. -->
-- **CV language:** [YOUR_CV_LANGUAGE] <!-- English unless your market expects otherwise; /setup asks -->
+  | Spanish | Native |
+  | English | C2 (EF SET 75/100) |
+- **CV language:** Match the posting (Spanish posting -> Spanish CV, English posting -> English CV)
 
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Status:** Employed - Information Security Analyst at Profound (contracted through OperationsArmy), remote, since Sep 2026. Seeking a long-term role.
+- **LinkedIn headline:** "Information Security Analyst"
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **Ingeniero de Sistemas y Computación (B.Sc. Systems and Computer Engineering)** (2020-2026, awarded 9 Jul 2026) - Universidad Pedagógica y Tecnológica de Colombia (UPTC), Tunja
+  - GPA 3.8/5.0. Holds a Colombian tarjeta profesional.
+  - Thesis / Práctica Empresarial (graded Sobresaliente): SGSI+, ISO/IEC 27001 audit automation platform at Banco de Bogotá
+  - Topics: systems auditing, distributed systems, operating systems, data networks, software engineering, databases
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Information Security Analyst** (Sep 2026 - Present) - **Profound, contracted through OperationsArmy** (Remote, US)
+  - Supports SOC 2 and ISO 27001 compliance: control tracking, evidence collection, audit support in Vanta
+  - Maintains security policies and procedures; works with Engineering, Legal and Product in English
+- **Aprendiz Practicante Empresarial (Business Intern)** (Jan 2025 - Jan 2026) - **Banco de Bogotá, Security & Cybersecurity CoE** (Bogotá, Colombia)
+  - Built SGSI+ on Power Apps, Power Automate, SharePoint, Power BI: 1,361 evidence requests, 90.4% delivery rate, 9 automated workflows, recognized by the external auditor
+  - ISO/IEC 27001:2022 ISMS evidence validation, control reviews, findings and action-plan tracking
+  - Power BI data modeling (Power Query, star schema) for compliance dashboards
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** ISO/IEC 27001:2022, SOC 2, Vanta, GRC evidence and control management, Microsoft Power Platform (Power Apps, Power Automate, Power BI, SharePoint)
+- **Secondary:** AWS (IAM, VPC, KMS, S3, Lambda, CloudWatch, CloudFormation - lab level), ELK Stack, Nessus, OpenVAS, Wireshark, Nmap, Kali Linux, OPNsense, Python, SQL, Java/Spring Boot, Docker, Terraform (basic), basic Active Directory
+- **Domain:** Information security governance, risk and compliance; banking and SaaS compliance
+- **Software:** Vanta, Power Platform, Proxmox VE, PyTorch, ONNX, Git, Linux, Claude Code
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+- **CompTIA Security+ ce (SY0-701)** - completed Jun 2026 (valid to Jun 2029)
+- **EPAM Cloud Mentor University - AWS** - 38 labs passed, 2nd on leaderboard, certificate expected Dec 2026
+- **Deep Learning Specialization** (DeepLearning.AI) - Nov 2025
+- **Foundation Level Threat Intelligence Analyst (arcX FTIA)** - Nov 2024
+- **Back End Development and APIs** (freeCodeCamp) - Dec 2024
+- **EF SET English 75/100 (C2)** - Nov 2024
 
 ### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+- None
 
 ### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- First Place - UPTC Hackathon (2026)
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+- **Builder-troubleshooter** - energized by fixing, building, improving and breaking things in mission-critical systems
+- **Automates the manual** - turned a spreadsheet audit process into SGSI+
+- **Strengths:** self-directed learning, automation mindset, documentation, persistence (hand-labeled 17,000+ images)
+- **Growth areas:** early career; AWS/SIEM/AD skills are lab-level rather than production
+- **Thrives in:** mission-critical, varied, hands-on environments with autonomy; drained by repetitive work
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Truly mission-critical work: fix, develop, improve, make and break things
+- Cloud security and hands-on AWS work
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- Information security / GRC: banks, fintech, SaaS and tech companies with SOC 2 / ISO 27001 programs, consultancies (Big Four, MSSPs)
+- Cloud security: AWS-heavy tech companies, cloud consultancies
+- SOC: MSSPs, banks, telecoms
 
 ### Deal-breakers
-<!-- Hard constraints on job search. Language requirements are handled separately and
-automatically from your Languages table above - don't duplicate them here. -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- Pay below COP 3,500,000/month
+- Short-term / project-only contracts (wants long-term roles)
+- Predominantly repetitive work
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)
