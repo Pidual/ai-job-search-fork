@@ -35,7 +35,11 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
 % frozen before \moderncvcolor runs. Re-let them after. \namefont is the hook
 % every name-style macro routes through, so this also works on moderncv 2.3.1
 % (Debian/Ubuntu apt), which has no \firstnamestyle/\lastnamestyle at all.
-\renewcommand*{\namefont}{\fontsize{34}{36}\bfseries\upshape}
+\renewcommand*{\namefont}{\fontsize{30}{32}\bfseries\upshape}
+% Keep the full name on one line: banking's head boxes the name at
+% 0.8\textwidth (moderncvheadiii.sty); widen it to the full text width.
+\usepackage{etoolbox}
+\patchcmd{\makehead}{0.8\textwidth}{\textwidth}{}{}
 \colorlet{firstnamecolor}{color1}
 \colorlet{lastnamecolor}{color1}
 \colorlet{namecolor}{color1}
