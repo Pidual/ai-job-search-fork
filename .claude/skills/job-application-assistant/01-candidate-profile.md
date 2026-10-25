@@ -81,7 +81,7 @@ Bogotá, Colombia - Security & Cybersecurity Center of Excellence (area 9030 COE
 
 ## Certifications
 - **CompTIA Security+ ce (SY0-701)** - certified 4 Jun 2026, valid through 4 Jun 2029 - https://www.credly.com/badges/485adf76-e28e-4540-8a77-276ecb24b6d0/linked_in_profile
-- **EPAM Cloud Mentor University - AWS (Cloud Platform Engineer Program LatAm)** - 2026: 38 hands-on AWS labs passed (39/40 tasks), score 3460/3900 (pass 3440), **2nd place on the course leaderboard**; certificate expected Dec 2026 (state "expected" until issued)
+- **EPAM Cloud Mentor University - AWS (Cloud Platform Engineer Program LatAm)** - 2026: all 39 hands-on AWS labs completed (the Syndicate platform shows 38 in this course because a bug moved the last completed lab into the separate "CloudX Associate: AWS DevOps 2.0" course; keep a screenshot of both), score 3460/3900 (pass 3440), **2nd place on the course leaderboard**; certificate expected Dec 2026 (state "expected" until issued)
 - **Deep Learning Specialization** - DeepLearning.AI / Coursera - Nov 2025 - https://www.coursera.org/account/accomplishments/specialization/8HCZD7Y1AMZC
 - **Back End Development and APIs** - freeCodeCamp - Dec 2024 - https://www.freecodecamp.org/certification/Pidual/back-end-development-and-apis
 - **Foundation Level Threat Intelligence Analyst (FTIA)** - arcX - Nov 2024

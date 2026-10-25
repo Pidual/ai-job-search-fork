@@ -8,7 +8,7 @@ framework_version: 1.0.0
 and project history, 2026-10-25 - review before relying on this]*. -->
 
 ## Overview
-Carlos is a **builder-troubleshooter**: energized by hands-on, high-stakes technical work where they can build, fix, break and improve things, and drained by repetition. They learn by doing (a self-built security homelab, a 17,000-image dataset labeled by hand, 38 AWS labs) and turn manual processes into automated ones.
+Carlos is a **builder-troubleshooter**: energized by hands-on, high-stakes technical work where they can build, fix, break and improve things, and drained by repetition. They learn by doing (a self-built security homelab, a 17,000-image dataset labeled by hand, 39 AWS labs) and turn manual processes into automated ones.
 
 ## Core Behavioral Drives
 

@@ -31,7 +31,7 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 ### 3. EPAM Cloud Platform Engineer Program - AWS (fast learning, cloud security)
 **S:** I wanted to move toward cloud security, but my professional experience was in GRC, not AWS.
 **T:** Build real hands-on AWS skills while working.
-**A:** I completed EPAM's AWS program on the Syndicate platform: 38 practical labs covering IAM policy evaluation, conditions and role chaining, KMS-encrypted S3, VPC peering and Transit Gateway, Multi-AZ RDS, DMS migration, CloudFormation, CodeBuild/CodeDeploy and CloudWatch/SNS alarms.
+**A:** I completed EPAM's AWS program on the Syndicate platform: all 39 practical labs covering IAM policy evaluation, conditions and role chaining, KMS-encrypted S3, VPC peering and Transit Gateway, Multi-AZ RDS, DMS migration, CloudFormation, CodeBuild/CodeDeploy and CloudWatch/SNS alarms.
 **R:** Score 3460/3900 (pass mark 3440), 2nd place on the course leaderboard; certificate expected Dec 2026.
 **Use for:** "Why cloud security?", "How do you keep your skills current?", "Tell me about a time you taught yourself something"
 
@@ -78,7 +78,7 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 > Working as a cloud security engineer or senior GRC/cloud-compliance specialist: designing and automating controls in cloud environments, not just documenting them.
 
 ### "What's your biggest weakness?"
-> Some of my technical skills (AWS, SIEM, Active Directory) come from labs rather than production. I mitigate this by building real environments, the homelab and 38 AWS labs, and I'm looking for a role where I can apply them on live systems.
+> Some of my technical skills (AWS, SIEM, Active Directory) come from labs rather than production. I mitigate this by building real environments, the homelab and 39 AWS labs, and I'm looking for a role where I can apply them on live systems.
 
 ### "Why this company specifically?"
 > Customize per company. Must reference: specific projects, company values, market position, or team structure. Never give a generic answer.
