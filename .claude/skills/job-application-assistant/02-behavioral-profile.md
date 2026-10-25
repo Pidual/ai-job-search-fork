@@ -4,51 +4,49 @@ framework_version: 1.0.0
 
 # Behavioral Profile
 
-<!-- SETUP: This file is populated by running /setup -->
-<!-- You can use results from PI, DISC, Myers-Briggs, StrengthsFinder, or a self-assessment -->
+<!-- No formal assessment (PI/DISC/MBTI) on file. Everything below is *[Inferred from /setup answers
+and project history, 2026-10-25 - review before relying on this]*. -->
 
 ## Overview
-[YOUR_NAME]'s behavioral assessment identifies them as a **[PROFILE_TYPE]** pattern. [1-2 SENTENCE_SUMMARY].
+Carlos is a **builder-troubleshooter**: energized by hands-on, high-stakes technical work where they can build, fix, break and improve things, and drained by repetition. They learn by doing (a self-built security homelab, a 17,000-image dataset labeled by hand, 38 AWS labs) and turn manual processes into automated ones.
 
 ## Core Behavioral Drives
 
 | Drive | Level | Meaning |
 |-------|-------|---------|
-| [DRIVE_1] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_2] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_3] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_4] | [LEVEL] | [DESCRIPTION] |
+| Variety / change | High | Repetitive work is draining; wants new problems |
+| Impact / stakes | High | Excited by mission-critical systems |
+| Autonomy / self-direction | High | Builds labs and projects on own initiative |
+| Stability (employment) | High | Wants long-term roles, not short contracts |
 
 ## Strongest Behaviors
-- **[BEHAVIOR_1]:** [DESCRIPTION]
-- **[BEHAVIOR_2]:** [DESCRIPTION]
-- **[BEHAVIOR_3]:** [DESCRIPTION]
+- **Automating the manual:** Replaced a spreadsheet audit workflow with SGSI+ (9 flows, 1,361 evidence requests).
+- **Self-directed learning:** Homelab, AWS program (2nd on leaderboard), Security+ in parallel with work.
+- **Persistence on tedious-but-necessary work when it serves a goal:** hand-labeled 17,000+ images to train a custom model.
 
 ## How You Work Best
-- [ENVIRONMENT_PREFERENCE_1]
-- [ENVIRONMENT_PREFERENCE_2]
-- [ENVIRONMENT_PREFERENCE_3]
+- Mission-critical environments where reliability and security genuinely matter
+- Roles that mix building and improving (automation, cloud, tooling) with operational security work
+- Remote or hybrid setups with clear goals and room to own solutions
 
 ## Growth Areas (frame positively in applications)
-- **[AREA_1]:** [HOW_TO_FRAME_IT_POSITIVELY]
-- **[AREA_2]:** [HOW_TO_FRAME_IT_POSITIVELY]
+- **Early career (approx. 2 years incl. internship):** frame as a fast ramp - certified, shipped a production compliance platform, already working for a US company in English.
+- **Breadth over depth in some tools (AD, Terraform, SOC tooling at lab level):** frame as hands-on lab foundation, ready to deepen in production.
 
 ## Mapping to Job Posting Language
 
 When a job posting mentions these keywords, it's a **strong behavioral fit**:
-- [KEYWORD_OR_PHRASE_THAT_MATCHES_YOUR_STYLE]
-- [ANOTHER_KEYWORD]
+- "automation", "continuous improvement", "build", "own", "critical infrastructure", "cloud security", "fast-paced", "problem solving"
 
 When a job posting mentions these, flag as **potential friction** (not deal-breaker):
-- [KEYWORD_OR_PHRASE_THAT_MIGHT_CLASH]
-- [ANOTHER_KEYWORD]
+- "repetitive tasks", "high-volume ticket handling", "data entry", "temporary / fixed-term project contract", "Level 1 queue only"
 
 ## Management Style Preferences
-- [WHAT_MANAGEMENT_STYLE_WORKS_FOR_YOU]
-- [WHAT_DOESN'T_WORK]
+- Works best with clear objectives and autonomy to decide the how
+- Short-horizon contracting and roles with no growth path are a poor fit
 
 ## Using This in Applications
-- **Cover letters:** [HOW_TO_WEAVE_IN_BEHAVIORAL_STRENGTHS]
-- **CV:** [WHAT_TO_EMPHASIZE]
-- **Interviews:** [WHAT_STAR_EXAMPLES_TO_USE]
-- **Don't overstate:** [WHAT_NOT_TO_CLAIM]
+- **Cover letters:** Lead with SGSI+ as proof Carlos turns manual compliance work into automated, auditable systems; show initiative via the homelab/AWS labs.
+- **CV:** Emphasize measurable outcomes (1,361 / 90.4% / 9 flows / auditor recognition), certifications, and hands-on AWS.
+- **Interviews:** Use SGSI+ (impact), ResNet50 dataset (persistence/ownership), EPAM AWS (fast learning).
+- **Don't overstate:** No production SOC, IAM administration, IDS/IPS, Kubernetes or HIPAA experience.

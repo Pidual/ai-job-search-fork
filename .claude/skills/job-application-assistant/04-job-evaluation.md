@@ -60,9 +60,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** GRC / compliance (ISO/IEC 27001:2022, SOC 2, Vanta, evidence and control management, policy documentation, audit support), compliance automation on Microsoft Power Platform (Power Apps, Power Automate, Power BI, SharePoint), CompTIA Security+ fundamentals
+**Moderate match areas:** AWS and cloud security (IAM, VPC, KMS, CloudWatch, CloudFormation - lab level, EPAM program), SOC/SIEM fundamentals (ELK, Nessus/OpenVAS, Wireshark, Nmap - homelab level), Power BI data modeling, Java/Spring Boot, Python, Docker, Terraform (basic), basic Active Directory, threat intelligence fundamentals (FTIA)
+**Weak match areas:** Kubernetes, production incident response / EDR, IDS/IPS tuning, production IAM administration, HIPAA/PCI DSS/NIST CSF hands-on work, other clouds (Azure/GCP), advanced scripting at scale, OSCP-level offensive security
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for? Match on the function and nature of the work performed, not the literal job title - a "Data Consultant" and a "Data Scientist" role can be functionally identical.
@@ -74,9 +74,11 @@ Does work history align with what they're looking for? Match on the function and
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** InfoSec / GRC analyst work - ISO 27001 ISMS evidence and controls (Banco de Bogotá CoE), SOC 2 / ISO 27001 compliance support with Vanta (Profound), compliance process automation (SGSI+)
+**Moderate:** Cloud security / AWS (hands-on labs, no production role yet), Power Platform development, compliance data analysis in Power BI
+**Entry-level:** SOC analyst (homelab only), IAM administration, cloud/DevOps engineering, software development (projects only)
+
+Experience depth: ~1 year banking internship + current InfoSec Analyst role since Sep 2026. Treat postings asking for 3+ years as a stretch; 0-2 years / junior / "analista" roles are the sweet spot.
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -91,10 +93,13 @@ Does the role and company culture match the behavioral profile?
 **Red flags to research:** Department disorganization, work dominated by maintenance over development, poor chemistry with leadership, culture mismatches. Check reviews, media coverage, LinkedIn connections, and network contacts for insider perspective.
 
 ### 4. Location & Logistics (Pass/Fail + Notes)
-- Within commute range: PASS
-- Remote with occasional office: PASS
-- Requires relocation: FAIL (deal-breaker)
+- Fully remote (Colombia-eligible or international): PASS (preferred)
+- On-site or hybrid in **any city in Colombia**: PASS (willing to relocate within Colombia)
+- Requires relocation outside Colombia: FLAG (discuss with user)
 - Frequent international travel: FLAG (discuss with user)
+
+**Compensation gate:** minimum **COP 3,500,000/month** (or equivalent for USD-paid remote roles). A posting stating pay below this is a FAIL. Unstated pay is not a fail - note it.
+**Contract type:** strongly prefers long-term positions. Short fixed-term / project-only contracts: FLAG as a significant negative under Career Alignment.
 
 ### 5. Career Alignment & Motivation (0-100)
 Does this role advance career goals and contain tasks that energize?
@@ -107,19 +112,19 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+1. **GRC / Information Security Analyst** (best current fit) - ISO 27001, SOC 2, compliance, risk, audit
+2. **Cloud Security / AWS** (strongest desire) - roles that put AWS hands-on work into production; GRC roles with cloud scope score higher
+3. **SOC Analyst** (also interested) - monitoring, SIEM, detection
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
+- Tasks that energize: truly mission-critical systems; fixing, building, improving and "making and destroying" things; automation; hands-on cloud and security engineering
+- Tasks that drain: repetitive work (pure ticket queues, data entry, copy-paste evidence collection with no improvement scope)
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: wants a long-term, stable position; current role is an independent-contractor engagement. Minimum COP 3,500,000/month.
+- **Flexibility**: remote preferred; on-site/hybrid fine anywhere in Colombia
+- **Professional development**: move toward cloud security / AWS; deepen GRC; build toward further certifications
 
 ### 6. Salary Benchmark (Optional)
 

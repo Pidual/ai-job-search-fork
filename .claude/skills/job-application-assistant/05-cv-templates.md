@@ -59,7 +59,7 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Carlos Hernando Lozano Perez - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -69,13 +69,13 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
 \usepackage{import}
 
 % Personal data
-\name{[FIRST_NAME]}{[LAST_NAME]}
+\name{Carlos Hernando}{Lozano P\'erez}
 % If you have no address to list, DELETE this whole line. \address{}{}{} fails
 % with "There's no line here to end" on every moderncv version.
-\address{[YOUR_ADDRESS]}{}{}
-\phone[mobile]{[YOUR_PHONE]}
-\email{[YOUR_EMAIL]}
-\extrainfo{\href{[YOUR_LINKEDIN_URL]}{LinkedIn}, \href{[YOUR_GITHUB_URL]}{GitHub}}
+\address{Yopal, Casanare, Colombia}{}{}
+\phone[mobile]{+57 312 463 2164}
+\email{carlosmapache1@gmail.com}
+\extrainfo{\href{https://www.linkedin.com/in/carloslozanoperez/}{LinkedIn}, \href{https://github.com/Pidual}{GitHub}}
 
 \begin{document}
 \makecvtitle
@@ -137,11 +137,20 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 **Create 2-3 profile statement templates for your main role types:**
 
 <!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+CV language follows the posting: Spanish posting -> Spanish CV, English posting -> English CV.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For GRC / Information Security Analyst roles (priority 1):**
+> Information Security Analyst and Systems Engineer with hands-on GRC experience across a Colombian bank and a US technology company. At Banco de Bogotá's Security and Cybersecurity CoE I built SGSI+, a Power Platform solution that automated ISO/IEC 27001:2022 audit evidence management: 1,361 evidence requests at a 90.4\% delivery rate, 9 automated workflows, recognized by the external auditor. Currently supporting SOC 2 and ISO 27001 compliance at Profound with Vanta. CompTIA Security+ certified, C2 English.
+
+> *(ES)* Analista de Seguridad de la Información e Ingeniero de Sistemas con experiencia práctica en GRC en un banco colombiano y una empresa tecnológica estadounidense. En el CoE de Seguridad y Ciberseguridad del Banco de Bogotá construí SGSI+, una solución en Power Platform que automatizó la gestión de evidencias de auditoría ISO/IEC 27001:2022: 1.361 solicitudes de evidencia con 90,4\% de entrega, 9 flujos automatizados y reconocimiento del auditor externo. Actualmente apoyo el cumplimiento SOC 2 e ISO 27001 en Profound con Vanta. Certificado CompTIA Security+, inglés C2.
+
+**For Cloud Security / AWS roles (priority 2):**
+> Information Security Analyst with a compliance foundation (ISO/IEC 27001, SOC 2) and hands-on AWS skills: 38 labs passed in EPAM's Cloud Platform Engineer program (2nd on the course leaderboard), covering IAM policy design and role chaining, VPC peering and Transit Gateway, S3 encryption with KMS, CloudWatch/SNS monitoring and CloudFormation. Builds automation by default, as with SGSI+ at Banco de Bogotá. CompTIA Security+ certified, C2 English.
+> *(Lead with the cloud-security bridge: controls knowledge from GRC + hands-on AWS. Never call the AWS work production experience.)*
+
+**For SOC Analyst roles (priority 3):**
+> CompTIA Security+ certified Systems Engineer with an information-security background in banking and SaaS compliance, and a self-built security homelab: OPNsense firewall with VLAN segmentation, centralized logging with the ELK Stack, vulnerability scanning with Nessus and OpenVAS, and traffic analysis with Wireshark and Nmap. Threat-intelligence fundamentals (arcX FTIA). Methodical documenter, C2 English.
+> *(Do not claim production SOC monitoring, alert triage or incident escalation - homelab only.)*
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 

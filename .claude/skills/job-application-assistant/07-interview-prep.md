@@ -4,7 +4,7 @@ framework_version: 1.0.0
 
 # Interview Preparation Guide
 
-<!-- SETUP: STAR examples are personalized by running /setup based on your actual experience -->
+<!-- STAR examples populated by /setup on 2026-10-25 from the candidate profile. -->
 
 ## STAR Format
 
