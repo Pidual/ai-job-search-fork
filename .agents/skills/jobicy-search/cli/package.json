@@ -1,0 +1,20 @@
+{
+  "name": "jobicy-search-cli",
+  "version": "1.0.0",
+  "description": "CLI for searching remote jobs via Jobicy's public JSON API — working server-side keyword filter, no API key, zero runtime dependencies. Personal use only; credit Jobicy.",
+  "type": "module",
+  "main": "src/cli.ts",
+  "bin": {
+    "jobicy-search": "src/cli.ts"
+  },
+  "scripts": {
+    "start": "bun run src/cli.ts",
+    "test": "bun test --timeout 30000",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/bun": "1.3.14"
+  }
+}

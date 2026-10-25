@@ -1,0 +1,36 @@
+{
+  "$comment": [
+    "Curated roster of AI/ML companies whose public applicant-tracking-system (ATS) job boards this skill searches.",
+    "Edit this file to track the companies you care about — it is the whole point of the ats-search skill.",
+    "Each entry: { token, provider, name }.  provider is one of: greenhouse | ashby | lever.",
+    "The token is the company slug in its careers-page URL:",
+    "  https://job-boards.greenhouse.io/<token>/jobs/...   -> greenhouse",
+    "  https://jobs.ashbyhq.com/<token>/...                -> ashby",
+    "  https://jobs.lever.co/<token>/...                   -> lever",
+    "Verify a new token before adding it (see url-reference.md, 'Adding a company')."
+  ],
+  "companies": [
+    { "token": "anthropic", "provider": "greenhouse", "name": "Anthropic" },
+    { "token": "databricks", "provider": "greenhouse", "name": "Databricks" },
+    { "token": "scaleai", "provider": "greenhouse", "name": "Scale AI" },
+    { "token": "figureai", "provider": "greenhouse", "name": "Figure AI" },
+    { "token": "waymo", "provider": "greenhouse", "name": "Waymo" },
+    { "token": "stripe", "provider": "greenhouse", "name": "Stripe" },
+    { "token": "nuro", "provider": "greenhouse", "name": "Nuro" },
+    { "token": "samsara", "provider": "greenhouse", "name": "Samsara" },
+    { "token": "reddit", "provider": "greenhouse", "name": "Reddit" },
+    { "token": "coinbase", "provider": "greenhouse", "name": "Coinbase" },
+    { "token": "gitlab", "provider": "greenhouse", "name": "GitLab" },
+    { "token": "instacart", "provider": "greenhouse", "name": "Instacart" },
+    { "token": "robinhood", "provider": "greenhouse", "name": "Robinhood" },
+    { "token": "duolingo", "provider": "greenhouse", "name": "Duolingo" },
+    { "token": "discord", "provider": "greenhouse", "name": "Discord" },
+    { "token": "airtable", "provider": "greenhouse", "name": "Airtable" },
+    { "token": "openai", "provider": "ashby", "name": "OpenAI" },
+    { "token": "elevenlabs", "provider": "ashby", "name": "ElevenLabs" },
+    { "token": "cohere", "provider": "ashby", "name": "Cohere" },
+    { "token": "ramp", "provider": "ashby", "name": "Ramp" },
+    { "token": "palantir", "provider": "lever", "name": "Palantir" },
+    { "token": "matchgroup", "provider": "lever", "name": "Match Group" }
+  ]
+}
