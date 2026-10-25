@@ -1,3 +1,6 @@
+Esta es mi version del AI job searcher del parcero Mads
+
+
 <p align="center">
   <img src="assets/mascot/pip_flight_loop.gif" alt="Pip, the courier bird" width="200">
 </p>
