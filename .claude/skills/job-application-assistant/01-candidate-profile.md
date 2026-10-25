@@ -41,7 +41,8 @@ Remote (US company), full-time, independent contractor
 - Supports SOC 2 and ISO 27001 compliance: tracking security controls, collecting evidence and assisting audits, using Vanta to monitor progress per framework
 - Maintains and documents security policies and procedures
 - Works with Engineering, Legal and Product to gather and validate security information, in an English-speaking remote environment
-- **Not confirmed - do not claim:** HIPAA, customer security questionnaires (SIG/CAIQ/VSA), RFP/RFI responses, risk assessments (these appear in the offer-letter scope but the candidate has not confirmed doing them)
+- Completes customer security questionnaires (confirmed by the candidate 2026-10-25; specific formats such as SIG/CAIQ/VSA not confirmed - say "customer security questionnaires" only)
+- **Not confirmed - do not claim:** HIPAA, RFP/RFI responses, risk assessments, third-party/vendor risk management, risk-register ownership (these appear in the offer-letter scope or postings but the candidate has not confirmed doing them)
 - **CV phrasing:** "Information Security Analyst -- Profound (via OperationsArmy) -- Remote". Do not claim healthcare-sector experience.
 
 ### Aprendiz Practicante Empresarial (Business Intern) - Banco de Bogotá (22 Jan 2025 - 21 Jan 2026)

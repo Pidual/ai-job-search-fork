@@ -34,6 +34,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 ### Professional Experience
 - **Information Security Analyst** (Sep 2026 - Present) - **Profound, contracted through OperationsArmy** (Remote, US)
   - Supports SOC 2 and ISO 27001 compliance: control tracking, evidence collection, audit support in Vanta
+  - Completes customer security questionnaires
   - Maintains security policies and procedures; works with Engineering, Legal and Product in English
 - **Aprendiz Practicante Empresarial (Business Intern)** (Jan 2025 - Jan 2026) - **Banco de Bogotá, Security & Cybersecurity CoE** (Bogotá, Colombia)
   - Built SGSI+ on Power Apps, Power Automate, SharePoint, Power BI: 1,361 evidence requests, 90.4% delivery rate, 9 automated workflows, recognized by the external auditor

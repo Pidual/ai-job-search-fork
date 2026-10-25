@@ -30,7 +30,7 @@ Carlos is a **builder-troubleshooter**: energized by hands-on, high-stakes techn
 - Remote or hybrid setups with clear goals and room to own solutions
 
 ## Growth Areas (frame positively in applications)
-- **Early career (approx. 2 years incl. internship):** frame as a fast ramp - certified, shipped a production compliance platform, already working for a US company in English.
+- **Early career (approx. 14 months of GRC work incl. the internship):** frame as a fast ramp - certified, shipped a production compliance platform, already working for a US company in English.
 - **Breadth over depth in some tools (AD, Terraform, SOC tooling at lab level):** frame as hands-on lab foundation, ready to deepen in production.
 
 ## Mapping to Job Posting Language
