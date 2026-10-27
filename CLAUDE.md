@@ -91,7 +91,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 ## Workflow for New Job Applications
 1. User provides a job posting (URL or text)
 2. **Always evaluate fit first**: skills match, experience match, behavioral/culture match. Present this assessment to the user before proceeding.
-3. If good fit: create targeted CV (`cv/<company>_<role>.tex`). **No cover letter by default** (most target employers do not ask for one); draft `cover_letters/cover_<company>_<role>.tex` only when the user or the posting asks for one
+3. If good fit: create targeted CV (`cv/<company>_<role>.tex`). **No cover letter by default** (most target employers do not ask for one); draft `cover_letters/<company>_<role>_cover.tex` only when the user or the posting asks for one
 4. **Verify both documents** (see Verification Checklist below)
 5. Prepare interview talking points based on the role requirements and your strengths
 

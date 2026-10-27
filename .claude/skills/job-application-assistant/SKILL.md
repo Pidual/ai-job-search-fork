@@ -37,7 +37,7 @@ When the user provides a job posting (URL or text), follow this workflow:
 ### Step 3: Write Cover Letter
 - Follow the writing style rules in `03-writing-style.md` (critical: no em-dashes, no cliches)
 - Follow the template structure in `06-cover-letter-templates.md`
-- Create `cover_letters/cover_<company>_<role>.tex`
+- Create `cover_letters/<company>_<role>_cover.tex`
 - Ensure the letter connects specific experience to the role requirements
 
 ### Step 3b: Record the Application

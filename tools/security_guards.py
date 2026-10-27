@@ -181,6 +181,9 @@ REQUIRED_IGNORE_RULES = [
     "cover_letters/cover_*.*",
     # /apply also recognizes the uppercase Cover_* naming variant.
     "cover_letters/Cover_*.*",
+    # Current naming is cover_letters/<company>_<role>_cover.*; the prefix rules
+    # above still cover letters written under the older cover_* convention.
+    "cover_letters/*_cover.*",
     "documents/cv/**",
     "documents/linkedin/**",
     "documents/diplomas/**",

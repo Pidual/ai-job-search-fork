@@ -97,7 +97,7 @@ Read only the reference files you do not yet have:
 
 Also read the most recent existing CV and cover letter files for concrete structural reference (one of each is enough):
 - Read any existing tailored `cv/<company>_<role><CV_EXT>` file (anything in `cv/` except `main_example`) as a structural reference
-- Read any existing `cover_letters/cover_*<COVER_EXT>` or `cover_letters/Cover_*<COVER_EXT>` file as a structural reference
+- Read any existing `cover_letters/*_cover<COVER_EXT>` file (or a legacy `cover_letters/cover_*<COVER_EXT>` / `Cover_*<COVER_EXT>` one) as a structural reference
 
 *The master candidate profile (`01-candidate-profile.md`), the master CV (`cv/main_example.tex`), and CLAUDE.md's Candidate Profile section are the sole source of truth for facts; existing tailored CVs may be read for structure and phrasing only, never as a source of claims.*
 
@@ -116,7 +116,7 @@ Also read the most recent existing CV and cover letter files for concrete struct
 - Keep to 2 pages
 - **Grounding Audit:** Before writing to disk, audit all tailored bullet points against the union of three sources: `.claude/skills/job-application-assistant/01-candidate-profile.md` + the master CV (`cv/main_example.tex`) + `CLAUDE.md`'s Candidate Profile section to verify that all dates, roles, and metrics match exactly (zero profile drift or fabrication).
 
-### Cover Letter (`cover_letters/cover_<company>_<role><COVER_EXT>`)
+### Cover Letter (`cover_letters/<company>_<role>_cover<COVER_EXT>`)
 - **Match the language of the job posting** (Danish posting -> Danish cover letter, English posting -> English cover letter)
 - Follow the structure from `06-cover-letter-templates.md`
 - Use the `cover.cls` template
@@ -175,7 +175,7 @@ Both drafts are provided inline below. Do NOT use the Read tool on the draft fil
 <INSERT_CV_DRAFT_HERE>
 </CV_DRAFT>
 
-<COVER_LETTER_DRAFT file="cover_letters/cover_<COMPANY>_<ROLE><COVER_EXT>">
+<COVER_LETTER_DRAFT file="cover_letters/<COMPANY>_<ROLE>_cover<COVER_EXT>">
 <INSERT_COVER_LETTER_DRAFT_HERE>
 </COVER_LETTER_DRAFT>
 
@@ -192,7 +192,7 @@ Return your feedback in **two parts**:
 A JSON array of concrete edits the drafter can apply directly without re-reading the files. Each edit is an object:
 ```json
 {
-  "file": "cv/<COMPANY>_<ROLE><CV_EXT>" | "cover_letters/cover_<COMPANY>_<ROLE><COVER_EXT>",
+  "file": "cv/<COMPANY>_<ROLE><CV_EXT>" | "cover_letters/<COMPANY>_<ROLE>_cover<COVER_EXT>",
   "old_string": "<exact text currently in the draft>",
   "new_string": "<replacement text>",
   "reason": "<one-line rationale: keyword match / company angle / reframing / style / grounding>"
@@ -244,7 +244,7 @@ Use `<CV_COMPILE>` and `<COVER_COMPILE>` resolved in Step 2 (the active template
 
 ```bash
 cd cv && lualatex -interaction=nonstopmode <company>_<role>.tex
-cd ../cover_letters && xelatex -interaction=nonstopmode cover_<company>_<role>.tex
+cd ../cover_letters && xelatex -interaction=nonstopmode <company>_<role>_cover.tex
 ```
 
 - **Stock CV** uses **lualatex** — pdflatex fails on modern MiKTeX with fontawesome5 font-expansion errors. lualatex handles the same sources cleanly.
@@ -259,9 +259,9 @@ If either compile fails, fix the error and re-compile until clean.
 
 ```bash
 python3 tools/verify_pdf.py cv/<company>_<role>.pdf --pages 2
-python3 tools/verify_pdf.py cover_letters/cover_<company>_<role>.pdf --pages 1
+python3 tools/verify_pdf.py cover_letters/<company>_<role>_cover.pdf --pages 1
 python3 tools/verify_layout.py cv/<company>_<role>.pdf
-python3 tools/verify_layout.py cover_letters/cover_<company>_<role>.pdf
+python3 tools/verify_layout.py cover_letters/<company>_<role>_cover.pdf
 ```
 
 The two `--pages` lines are the page-count check: exactly 2 pages for the CV and exactly 1 for the cover letter (the hard limits in `05-cv-templates.md` and `06-cover-letter-templates.md`), exit 1 otherwise. With a custom template active, substitute its declared **Page limit** from the `ACTIVE-TEMPLATE` block. Nothing else runs this check - `verify_layout.py` deliberately leaves page count to it, and Step 5d's extraction call passes no `--pages` - so if these lines are skipped, the page budget is enforced by nothing but the visual read below.
@@ -282,7 +282,7 @@ Then read both PDFs via the Read tool and verify:
 - [ ] Section headings are not isolated at the top of page 2 with only 1-2 lines below
 - [ ] No awkward whitespace gaps
 
-**Cover letter (`cover_letters/cover_<company>_<role>.pdf`):**
+**Cover letter (`cover_letters/<company>_<role>_cover.pdf`):**
 - [ ] Exactly 1 page
 - [ ] Signature block visible, not cut off or pushed to a second page
 - [ ] Bullet list font matches surrounding body text (both should be Raleway-Medium)
@@ -351,7 +351,7 @@ After the final clean compile (and after 5b-5d have passed), delete the intermed
 
 - **Stock or custom LaTeX toolchain:**
   ```bash
-  rm -f cv/<company>_<role>.{aux,log,out,fls,fdb_latexmk,synctex.gz} cover_letters/cover_<company>_<role>.{aux,log,out,fls,fdb_latexmk,synctex.gz}
+  rm -f cv/<company>_<role>.{aux,log,out,fls,fdb_latexmk,synctex.gz} cover_letters/<company>_<role>_cover.{aux,log,out,fls,fdb_latexmk,synctex.gz}
   ```
 - **Custom template whose compile command redirects to `build/`:** also `rm -rf cv/build cover_letters/build` (`/add-template` Step 4 already says `/apply` must delete it).
 - **Zero-artifact toolchain (e.g. `typst compile`):** nothing to delete.
@@ -375,7 +375,7 @@ Summarize 3-5 key decisions made to tailor the application:
 ### Files Created
 List the files written:
 - `cv/<company>_<role><CV_EXT>`
-- `cover_letters/cover_<company>_<role><COVER_EXT>`
+- `cover_letters/<company>_<role>_cover<COVER_EXT>`
 
 Tell the user: "Both files are ready for your review. Open them to check the final output before compiling."
 

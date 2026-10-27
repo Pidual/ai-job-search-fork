@@ -71,6 +71,7 @@ cv/*.*
 cv/*.txt
 cover_letters/cover_*.*
 cover_letters/Cover_*.*
+cover_letters/*_cover.*
 !cover_letters/cover_example.tex
 
 # documents/ subfolder contents are personal — only README and folder structure are tracked

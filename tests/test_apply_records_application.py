@@ -431,7 +431,7 @@ class FallbackGlobFindsOneRolesDocuments(unittest.TestCase):
     def globs(path, heading):
         """The two fallback globs exactly as the spec writes them."""
         body = section(path, heading)
-        found = re.findall(r"`(cv/[^`]+|cover_letters/cover_[^`]+)`", body)
+        found = re.findall(r"`(cv/[^`]+|cover_letters/[^`]+)`", body)
         return [g for g in found if "*" in g]
 
     def resolve(self, glob, role):

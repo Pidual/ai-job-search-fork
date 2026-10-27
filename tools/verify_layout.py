@@ -45,7 +45,7 @@ instance, is read as body text and turns the space above it into a phantom hole.
 
 Usage:
     python tools/verify_layout.py cv/main_acme_ml_engineer.pdf
-    python tools/verify_layout.py cover_letters/cover_acme_ml_engineer.pdf
+    python tools/verify_layout.py cover_letters/acme_ml_engineer_cover.pdf
 
 Exit codes: 0 clean, 1 layout problem, 2 bad invocation or no usable extractor.
 

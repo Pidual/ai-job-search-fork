@@ -49,7 +49,7 @@ class ApplyRunsThePageCountCheck(unittest.TestCase):
             "2-page limit has no other mechanical check",
         )
         self.assertEqual(
-            invocations.get("cover_letters/cover_<company>_<role>.pdf"),
+            invocations.get("cover_letters/<company>_<role>_cover.pdf"),
             "1",
             "Step 5b must run verify_pdf.py --pages 1 on the cover letter",
         )
