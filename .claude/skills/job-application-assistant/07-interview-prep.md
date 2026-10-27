@@ -68,8 +68,10 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 ## Common Tough Questions
 
-### "Why are you looking to leave your current role?"
-> My role at Profound is an independent-contractor engagement through a staffing firm. I'm looking for a long-term position where I can grow, especially toward cloud security, and contribute beyond compliance documentation.
+### "Why did your role at Profound end?" / "Why are you available now?"
+> My role at Profound was an independent-contractor engagement through a staffing firm, and it ended in October 2026. In those two months I supported SOC 2 and ISO 27001 compliance in Vanta, completed customer security questionnaires and worked with Engineering, Legal and Product in English. Now I'm looking for a long-term position where I can grow, especially toward cloud security.
+
+*(Draft only - the candidate has not shared why the engagement ended. Keep the answer short, factual and forward-looking, and never criticize Profound or OperationsArmy. Fill in a one-line honest reason once the candidate confirms one.)*
 
 ### "You don't have [specific skill/experience]."
 > Acknowledge the gap directly, then bridge: GRC controls knowledge + hands-on AWS labs + homelab, and the track record of learning fast (Security+, EPAM 2nd place, SGSI+ built from scratch).

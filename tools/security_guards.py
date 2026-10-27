@@ -173,6 +173,8 @@ REQUIRED_IGNORE_RULES = [
     "*_BehavioralReport.pdf",
     "linkedin_Profile.pdf",
     "cv/main_*.*",
+    # Tailored CVs are cv/<company>_<role>.* (no main_ prefix).
+    "cv/*.*",
     "!cv/main_example.tex",
     # ATS text extractions (/apply step 5d) carry the CV's full text.
     "cv/*.txt",

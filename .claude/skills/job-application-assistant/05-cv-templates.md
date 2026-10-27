@@ -10,17 +10,17 @@ framework_version: 1.4.8
 
 All CVs use the moderncv LaTeX package with the "banking" style and "blue" color scheme.
 
-**Output file:** `cv/main_<company>_<role>.tex`
+**Output file:** `cv/<company>_<role>.tex`
 **Compile with:** **lualatex** on MiKTeX/TeX Live. pdflatex often fails on modern MiKTeX installs with `fontawesome5` font-expansion errors; lualatex handles the same sources cleanly.
 **Master reference:** `cv/main_example.tex` (comprehensive CV with all competencies, experience, and achievements - use as source when building targeted CVs)
 
 ### Compile command
 
 ```bash
-cd cv && lualatex -interaction=nonstopmode main_<company>_<role>.tex
+cd cv && lualatex -interaction=nonstopmode <company>_<role>.tex
 ```
 
-Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. Any page count other than 2 is a failure that must be fixed before presenting to the user.
+Expected output: `Output written on <company>_<role>.pdf (2 pages, ...)`. Any page count other than 2 is a failure that must be fixed before presenting to the user.
 
 ## Document Structure
 
@@ -144,9 +144,9 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 CV language follows the posting: Spanish posting -> Spanish CV, English posting -> English CV.
 
 **For GRC / Information Security Analyst roles (priority 1):**
-> Information Security Analyst and Systems Engineer with hands-on GRC experience across a Colombian bank and a US technology company. At Banco de Bogotá's Security and Cybersecurity CoE I built SGSI+, a Power Platform solution that automated ISO/IEC 27001:2022 audit evidence management: 1,361 evidence requests at a 90.4\% delivery rate, 9 automated workflows, recognized by the external auditor. Currently supporting SOC 2 and ISO 27001 compliance at Profound with Vanta. CompTIA Security+ certified, C2 English.
+> Information Security Analyst and Systems Engineer with hands-on GRC experience across a Colombian bank and a US technology company. At Banco de Bogotá's Security and Cybersecurity CoE I built SGSI+, a Power Platform solution that automated ISO/IEC 27001:2022 audit evidence management: 1,361 evidence requests at a 90.4\% delivery rate, 9 automated workflows, recognized by the external auditor. Most recently supported SOC 2 and ISO 27001 compliance at Profound with Vanta. CompTIA Security+ certified, C2 English.
 
-> *(ES)* Analista de Seguridad de la Información e Ingeniero de Sistemas con experiencia práctica en GRC en un banco colombiano y una empresa tecnológica estadounidense. En el CoE de Seguridad y Ciberseguridad del Banco de Bogotá construí SGSI+, una solución en Power Platform que automatizó la gestión de evidencias de auditoría ISO/IEC 27001:2022: 1.361 solicitudes de evidencia con 90,4\% de entrega, 9 flujos automatizados y reconocimiento del auditor externo. Actualmente apoyo el cumplimiento SOC 2 e ISO 27001 en Profound con Vanta. Certificado CompTIA Security+, inglés C2.
+> *(ES)* Analista de Seguridad de la Información e Ingeniero de Sistemas con experiencia práctica en GRC en un banco colombiano y una empresa tecnológica estadounidense. En el CoE de Seguridad y Ciberseguridad del Banco de Bogotá construí SGSI+, una solución en Power Platform que automatizó la gestión de evidencias de auditoría ISO/IEC 27001:2022: 1.361 solicitudes de evidencia con 90,4\% de entrega, 9 flujos automatizados y reconocimiento del auditor externo. Más recientemente apoyé el cumplimiento SOC 2 e ISO 27001 en Profound con Vanta. Certificado CompTIA Security+, inglés C2.
 
 **For Cloud Security / AWS roles (priority 2):**
 > Information Security Analyst with a compliance foundation (ISO/IEC 27001, SOC 2) and hands-on AWS skills: all 39 hands-on labs completed in EPAM's Cloud Platform Engineer program (2nd on the course leaderboard), covering IAM policy design and role chaining, VPC peering and Transit Gateway, S3 encryption with KMS, CloudWatch/SNS monitoring and CloudFormation. Builds automation by default, as with SGSI+ at Banco de Bogotá. CompTIA Security+ certified, C2 English.
@@ -256,7 +256,7 @@ Related trap: a bullet whose text begins with a literal `[` must be braced - `\i
 
 After writing the CV and before presenting to the user, always compile and visually inspect the PDF. Iterate until the layout is clean. Workflow:
 
-1. Run `lualatex -interaction=nonstopmode main_<company>_<role>.tex`
+1. Run `lualatex -interaction=nonstopmode <company>_<role>.tex`
 2. Check the output page count: must be exactly 2
 3. Read the PDF via the Read tool and visually inspect both pages
 4. Check for **orphaned entries**: a `\cventry` title line must never sit alone at the bottom of page 1 with its bullets on page 2
@@ -289,7 +289,7 @@ Most employers run CVs through an ATS before a human sees them, and the ATS read
 > **Windows:** run these tools as `python`, not `python3`. A python.org install ships no `python3`, so that name reaches the Microsoft Store alias, which either exits 49 with no output (#669) or starts a separate Store Python without the packages `pip` installed (such as pypdf). `.claude/settings.json` allows both spellings.
 
 ```bash
-python3 tools/verify_pdf.py cv/main_<company>_<role>.pdf --dump-text cv/main_<company>_<role>.txt
+python3 tools/verify_pdf.py cv/<company>_<role>.pdf --dump-text cv/<company>_<role>.txt
 ```
 
 Extraction tries **pypdf** first (`pip install pypdf`, BSD license), then Poppler `pdftotext`. If a fallback still uses `pdftotext -layout`, it must also pass `-enc UTF-8`: Xpdf-based builds default to Latin-1, which makes every non-ASCII character in a perfectly good CV read back as a replacement character. If neither extractor is available, skip the mechanical check with a warning and rely on the visual PDF read for keyword coverage.
@@ -325,7 +325,7 @@ Two independent causes, both easy to avoid:
 
    Where a genuine range exists, use it even when a single year would be factually accurate - a degree written `1995` is true but imports worse than `1992-1995`. Do not invent a start date you do not have; a lone graduation year is fine, just expect it to be typed in by hand.
 
-**Cause 1 is mechanical in step 5d**: `python3 tools/verify_pdf.py cv/main_<company>_<role>.pdf --ascii-dates` scans the raw text layer for a year joined to a Unicode dash and exits 1 naming each hit with its code point (`U+2013 in 'Role Title 2016–2024'`). It deliberately reads the raw layer: the fold that lets `--contains "2016-2024"` match what the template renders maps that same en-dash back to `-`, so `--contains` can never see this. A year on either side of the dash is enough, so `Mar 2016 – Jul 2016` and `2016 – Present` are caught too; a numeric range with no year (`EUR 600k–1M`) is left alone. **Cause 2 stays a read-through check**: after extracting the text layer, confirm every experience entry shows a start *and* an end. Because both failures are silent and invisible in the PDF, the candidate otherwise discovers them only while filling in the application form.
+**Cause 1 is mechanical in step 5d**: `python3 tools/verify_pdf.py cv/<company>_<role>.pdf --ascii-dates` scans the raw text layer for a year joined to a Unicode dash and exits 1 naming each hit with its code point (`U+2013 in 'Role Title 2016–2024'`). It deliberately reads the raw layer: the fold that lets `--contains "2016-2024"` match what the template renders maps that same en-dash back to `-`, so `--contains` can never see this. A year on either side of the dash is enough, so `Mar 2016 – Jul 2016` and `2016 – Present` are caught too; a numeric range with no year (`EUR 600k–1M`) is left alone. **Cause 2 stays a read-through check**: after extracting the text layer, confirm every experience entry shows a start *and* an end. Because both failures are silent and invisible in the PDF, the candidate otherwise discovers them only while filling in the application form.
 
 ## Page Budget - Hard 2-Page Limit
 

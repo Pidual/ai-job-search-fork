@@ -15,16 +15,17 @@ CompTIA certificate, EPAM/Syndicate activity export) plus the candidate's own co
 - **Email:** carlosmapache1@gmail.com
 - **LinkedIn:** https://www.linkedin.com/in/carloslozanoperez/
 - **GitHub:** https://github.com/Pidual
-- **Status:** Employed - Information Security Analyst at Profound (contracted through OperationsArmy), remote, since Sep 2026
+- **Status:** Open to work, available immediately. Most recent role: Information Security Analyst at Profound (contracted through OperationsArmy), remote, Sep 2026 - Oct 2026; the engagement ended in Oct 2026 (candidate was let go, reported 2026-10-26)
 - **Professional standing:** Profesional universitario in Colombia, holds a tarjeta profesional
-- **Constraints:** Open to on-site or hybrid work in any city in Colombia; remote strongly preferred. Wants long-term positions (current role is an independent-contractor engagement).
+- **Current target (Oct 2026):** IT support, help desk, NOC and junior sysadmin roles, to gain production infrastructure experience fast. GRC / cloud security / SOC remain longer-term goals.
+- **Constraints:** Open to on-site or hybrid work in any city in Colombia; remote strongly preferred. Prefers long-term positions but accepts fixed-term / project contracts while job hunting (the Profound role was an independent-contractor engagement and has ended).
 
 ### Languages
 
 | Language | Level | Notes |
 |----------|-------|-------|
 | Spanish | Native | |
-| English | C2 | EF SET 75/100 (C2 Proficient), Nov 2024. Works daily in English with a US company. |
+| English | C2 | EF SET 75/100 (C2 Proficient), Nov 2024. Worked daily in English with a US company (Profound, Sep-Oct 2026). |
 
 ## Education
 
@@ -36,12 +37,12 @@ CompTIA certificate, EPAM/Syndicate activity export) plus the candidate's own co
 
 ## Professional Experience
 
-### Information Security Analyst - Profound (contracted through OperationsArmy) (Sep 2026 - Present)
-Remote (US company), full-time, independent contractor
-- Supports SOC 2 and ISO 27001 compliance: tracking security controls, collecting evidence and assisting audits, using Vanta to monitor progress per framework
-- Maintains and documents security policies and procedures
-- Works with Engineering, Legal and Product to gather and validate security information, in an English-speaking remote environment
-- Completes customer security questionnaires (confirmed by the candidate 2026-10-25; specific formats such as SIG/CAIQ/VSA not confirmed - say "customer security questionnaires" only)
+### Information Security Analyst - Profound (contracted through OperationsArmy) (Sep 2026 - Oct 2026)
+Remote (US company), full-time, independent contractor. Engagement ended Oct 2026 (let go). On CVs and letters write past tense and the date range only; never state or imply the reason for leaving.
+- Supported SOC 2 and ISO 27001 compliance: tracking security controls, collecting evidence and assisting audits, using Vanta to monitor progress per framework
+- Maintained and documented security policies and procedures
+- Worked with Engineering, Legal and Product to gather and validate security information, in an English-speaking remote environment
+- Completed customer security questionnaires (confirmed by the candidate 2026-10-25; specific formats such as SIG/CAIQ/VSA not confirmed - say "customer security questionnaires" only)
 - **Not confirmed - do not claim:** HIPAA, RFP/RFI responses, risk assessments, third-party/vendor risk management, risk-register ownership (these appear in the offer-letter scope or postings but the candidate has not confirmed doing them)
 - **CV phrasing:** "Information Security Analyst -- Profound (via OperationsArmy) -- Remote". Do not claim healthcare-sector experience.
 

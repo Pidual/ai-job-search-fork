@@ -8,16 +8,16 @@ framework_version: 1.0.0
 and project history, 2026-10-25 - review before relying on this]*. -->
 
 ## Overview
-Carlos is a **builder-troubleshooter**: energized by hands-on, high-stakes technical work where they can build, fix, break and improve things, and drained by repetition. They learn by doing (a self-built security homelab, a 17,000-image dataset labeled by hand, 39 AWS labs) and turn manual processes into automated ones.
+Carlos is a **builder-troubleshooter**: energized by hands-on, high-stakes technical work where they can build, fix, break and improve things. They learn by doing (a self-built security homelab, a 17,000-image dataset labeled by hand, 39 AWS labs) and turn manual processes into automated ones.
 
 ## Core Behavioral Drives
 
 | Drive | Level | Meaning |
 |-------|-------|---------|
-| Variety / change | High | Repetitive work is draining; wants new problems |
+| Variety / change | High |  
 | Impact / stakes | High | Excited by mission-critical systems |
 | Autonomy / self-direction | High | Builds labs and projects on own initiative |
-| Stability (employment) | High | Wants long-term roles, not short contracts |
+| Stability (employment) | High | Prefers long-term roles; accepts fixed-term contracts while job hunting |
 
 ## Strongest Behaviors
 - **Automating the manual:** Replaced a spreadsheet audit workflow with SGSI+ (9 flows, 1,361 evidence requests).
@@ -38,12 +38,8 @@ Carlos is a **builder-troubleshooter**: energized by hands-on, high-stakes techn
 When a job posting mentions these keywords, it's a **strong behavioral fit**:
 - "automation", "continuous improvement", "build", "own", "critical infrastructure", "cloud security", "fast-paced", "problem solving"
 
-When a job posting mentions these, flag as **potential friction** (not deal-breaker):
-- "repetitive tasks", "high-volume ticket handling", "data entry", "temporary / fixed-term project contract", "Level 1 queue only"
-
 ## Management Style Preferences
 - Works best with clear objectives and autonomy to decide the how
-- Short-horizon contracting and roles with no growth path are a poor fit
 
 ## Using This in Applications
 - **Cover letters:** Lead with SGSI+ as proof Carlos turns manual compliance work into automated, auditable systems; show initiative via the homelab/AWS labs.

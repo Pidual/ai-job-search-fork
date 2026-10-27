@@ -78,7 +78,7 @@ Does work history align with what they're looking for? Match on the function and
 **Moderate:** Cloud security / AWS (hands-on labs, no production role yet), Power Platform development, compliance data analysis in Power BI
 **Entry-level:** SOC analyst (homelab only), IAM administration, cloud/DevOps engineering, software development (projects only)
 
-Experience depth: ~1 year banking internship + current InfoSec Analyst role since Sep 2026. Treat postings asking for 3+ years as a stretch; 0-2 years / junior / "analista" roles are the sweet spot.
+Experience depth: ~1 year banking internship + InfoSec Analyst role at Profound Sep-Oct 2026 (ended); currently not employed. Treat postings asking for 3+ years as a stretch; 0-2 years / junior / "analista" roles are the sweet spot.
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -98,8 +98,8 @@ Does the role and company culture match the behavioral profile?
 - Requires relocation outside Colombia: FLAG (discuss with user)
 - Frequent international travel: FLAG (discuss with user)
 
-**Compensation gate:** minimum **COP 3,500,000/month** (or equivalent for USD-paid remote roles). A posting stating pay below this is a FAIL. Unstated pay is not a fail - note it.
-**Contract type:** strongly prefers long-term positions. Short fixed-term / project-only contracts: FLAG as a significant negative under Career Alignment.
+**Compensation gate:** minimum **COP 3,200,000/month** (or equivalent for USD-paid remote roles). A posting stating pay below this is a FAIL. Unstated pay is not a fail - note it.
+**Contract type:** prefers long-term positions, but fixed-term / project contracts are acceptable while job hunting (Oct 2026). Note the contract type in the evaluation; do not treat it as a deal-breaker or a significant negative.
 
 ### 5. Career Alignment & Motivation (0-100)
 Does this role advance career goals and contain tasks that energize?
@@ -112,17 +112,18 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
+0. **IT Support / Help Desk / NOC / Junior Sysadmin** (current focus, Oct 2026) - the fastest route to production experience with servers, networks, Linux, Windows/AD and cloud. Score these 60+ on Career Alignment when they offer hands-on infrastructure exposure or a path to L2 / sysadmin; do not penalise entry-level ticket work as "repetitive" by itself.
 1. **GRC / Information Security Analyst** (best current fit) - ISO 27001, SOC 2, compliance, risk, audit
 2. **Cloud Security / AWS** (strongest desire) - roles that put AWS hands-on work into production; GRC roles with cloud scope score higher
 3. **SOC Analyst** (also interested) - monitoring, SIEM, detection
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
 - Tasks that energize: truly mission-critical systems; fixing, building, improving and "making and destroying" things; automation; hands-on cloud and security engineering
-- Tasks that drain: repetitive work (pure ticket queues, data entry, copy-paste evidence collection with no improvement scope)
+- Tasks that drain: repetitive work with no learning or growth (data entry, copy-paste evidence collection with no improvement scope; L1 ticket queues are acceptable for now as a stepping stone - see career goal 0) ( data entry, copy-paste evidence collection with no improvement scope)
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: wants a long-term, stable position; current role is an independent-contractor engagement. Minimum COP 3,500,000/month.
+- **Security**: prefers a long-term, stable position but accepts fixed-term contracts; currently not employed (Profound contractor engagement ended Oct 2026), so speed to offer matters more than before. Minimum COP 3,200,000/month.
 - **Flexibility**: remote preferred; on-site/hybrid fine anywhere in Colombia
 - **Professional development**: move toward cloud security / AWS; deepen GRC; build toward further certifications
 

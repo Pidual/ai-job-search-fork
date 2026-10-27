@@ -22,7 +22,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
   | English | C2 (EF SET 75/100) |
 - **CV language:** Match the posting (Spanish posting -> Spanish CV, English posting -> English CV)
 
-- **Status:** Employed - Information Security Analyst at Profound (contracted through OperationsArmy), remote, since Sep 2026. Seeking a long-term role.
+- **Status:** Open to work, available immediately. Most recent role: Information Security Analyst at Profound (contracted through OperationsArmy), remote, Sep 2026 - Oct 2026 (contractor engagement ended). Seeking a role quickly; long-term preferred, fixed-term contracts acceptable.
 - **LinkedIn headline:** "Information Security Analyst"
 
 ### Education
@@ -32,10 +32,10 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
   - Topics: systems auditing, distributed systems, operating systems, data networks, software engineering, databases
 
 ### Professional Experience
-- **Information Security Analyst** (Sep 2026 - Present) - **Profound, contracted through OperationsArmy** (Remote, US)
-  - Supports SOC 2 and ISO 27001 compliance: control tracking, evidence collection, audit support in Vanta
-  - Completes customer security questionnaires
-  - Maintains security policies and procedures; works with Engineering, Legal and Product in English
+- **Information Security Analyst** (Sep 2026 - Oct 2026) - **Profound, contracted through OperationsArmy** (Remote, US)
+  - Supported SOC 2 and ISO 27001 compliance: control tracking, evidence collection, audit support in Vanta
+  - Completed customer security questionnaires
+  - Maintained security policies and procedures; worked with Engineering, Legal and Product in English
 - **Aprendiz Practicante Empresarial (Business Intern)** (Jan 2025 - Jan 2026) - **Banco de Bogotá, Security & Cybersecurity CoE** (Bogotá, Colombia)
   - Built SGSI+ on Power Apps, Power Automate, SharePoint, Power BI: 1,361 evidence requests, 90.4% delivery rate, 9 automated workflows, recognized by the external auditor
   - ISO/IEC 27001:2022 ISMS evidence validation, control reviews, findings and action-plan tracking
@@ -73,14 +73,14 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 - Cloud security and hands-on AWS work
 
 ### Target Sectors
+- **Current focus (Oct 2026): IT support, help desk, NOC and junior sysadmin roles** - to gain production infrastructure experience fast; any sector (MSPs, BPO/outsourcing, telecoms, banks, SaaS, retail, healthcare)
 - Information security / GRC: banks, fintech, SaaS and tech companies with SOC 2 / ISO 27001 programs, consultancies (Big Four, MSSPs)
 - Cloud security: AWS-heavy tech companies, cloud consultancies
 - SOC: MSSPs, banks, telecoms
 
 ### Deal-breakers
-- Pay below COP 3,500,000/month
-- Short-term / project-only contracts (wants long-term roles)
-- Predominantly repetitive work
+- Pay below COP 3,200,000/month
+- Predominantly repetitive work with no growth path (entry-level help desk / NOC roles are acceptable as a stepping stone to sysadmin / infrastructure)
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)
@@ -91,7 +91,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 ## Workflow for New Job Applications
 1. User provides a job posting (URL or text)
 2. **Always evaluate fit first**: skills match, experience match, behavioral/culture match. Present this assessment to the user before proceeding.
-3. If good fit: create targeted CV (`cv/main_<company>_<role>.tex`) and cover letter (`cover_letters/cover_<company>_<role>.tex`)
+3. If good fit: create targeted CV (`cv/<company>_<role>.tex`). **No cover letter by default** (most target employers do not ask for one); draft `cover_letters/cover_<company>_<role>.tex` only when the user or the posting asks for one
 4. **Verify both documents** (see Verification Checklist below)
 5. Prepare interview talking points based on the role requirements and your strengths
 
@@ -135,7 +135,7 @@ Both documents MUST be compiled and visually inspected via the Read tool on the 
 - [ ] **Cover letter bullet font matches body font** - `\lettercontent{}` must not wrap `\begin{itemize}...\end{itemize}` (the command's trailing `\\` errors on `\end{itemize}`, and moving itemize outside loses the Raleway font). Standard pattern: close `\lettercontent{}`, then wrap the list in `{\raggedright\fontspec[Path = OpenFonts/fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont \begin{itemize}...\end{itemize}\par}`
 
 ### ATS & keyword verification (CV)
-ATS parsers read the PDF's embedded text layer, not the rendered page. Extract it with `python3 tools/verify_pdf.py cv/main_<company>_<role>.pdf --dump-text cv/main_<company>_<role>.txt` (pypdf, then `pdftotext -layout -enc UTF-8`) and verify what a parser sees. If both extractors are missing, skip the parseability items with a warning and check keyword coverage from the visual PDF read instead.
+ATS parsers read the PDF's embedded text layer, not the rendered page. Extract it with `python3 tools/verify_pdf.py cv/<company>_<role>.pdf --dump-text cv/<company>_<role>.txt` (pypdf, then `pdftotext -layout -enc UTF-8`) and verify what a parser sees. If both extractors are missing, skip the parseability items with a warning and check keyword coverage from the visual PDF read instead.
 - [ ] CV text layer extracts cleanly - no `(cid:*)` markers, `�` replacement characters, or text visible in the PDF but absent from the extraction
 - [ ] Email and phone appear as **literal text** in the extraction (icon-glyph noise like `MOBILE-ALT`/`Envelope` is harmless, but a contact detail carried only by an icon or hyperlink is invisible to ATS)
 - [ ] Reading order of the extracted text matches the visual order (single-column stock template is safe; multi-column custom templates are where this breaks)

@@ -43,7 +43,7 @@ class ApplyRunsThePageCountCheck(unittest.TestCase):
     def test_step_5b_checks_both_documents_with_the_guides_page_limits(self):
         invocations = dict(page_count_invocations(self.step_5b))
         self.assertEqual(
-            invocations.get("cv/main_<company>_<role>.pdf"),
+            invocations.get("cv/<company>_<role>.pdf"),
             "2",
             "Step 5b must run verify_pdf.py --pages 2 on the CV - the hard "
             "2-page limit has no other mechanical check",

@@ -96,7 +96,7 @@ Read only the reference files you do not yet have:
 **Resolve the active template (do this once, reuse everywhere below):** if `05-cv-templates.md` or `06-cover-letter-templates.md` opens with an `ACTIVE-TEMPLATE` managed block (inserted by `/add-template`), read its declared **source extension** and **compile command** — these override the stock `.tex`/lualatex (CV) and `.tex`/xelatex (cover letter) defaults for the rest of this workflow. Call these `<CV_EXT>`/`<CV_COMPILE>` and `<COVER_EXT>`/`<COVER_COMPILE>`; where no block is present, they default to `.tex`, the stock lualatex command, and the stock xelatex command respectively. Every `.tex` reference below is really `<CV_EXT>` or `<COVER_EXT>` — stock behavior is unchanged, this only matters when a custom template is active.
 
 Also read the most recent existing CV and cover letter files for concrete structural reference (one of each is enough):
-- Read any existing `cv/main_*<CV_EXT>` file as a structural reference
+- Read any existing tailored `cv/<company>_<role><CV_EXT>` file (anything in `cv/` except `main_example`) as a structural reference
 - Read any existing `cover_letters/cover_*<COVER_EXT>` or `cover_letters/Cover_*<COVER_EXT>` file as a structural reference
 
 *The master candidate profile (`01-candidate-profile.md`), the master CV (`cv/main_example.tex`), and CLAUDE.md's Candidate Profile section are the sole source of truth for facts; existing tailored CVs may be read for structure and phrasing only, never as a source of claims.*
@@ -108,7 +108,7 @@ Also read the most recent existing CV and cover letter files for concrete struct
 
 *In both filenames below, `<company>_<role>` is derived by the **Subfolder naming** rule in `documents/README.md` — the same rule `/outcome` Step 1.4 uses for the archive folder, so a `/` or other path character in a company or role name can never split the filename across directories.*
 
-### CV (`cv/main_<company>_<role><CV_EXT>`)
+### CV (`cv/<company>_<role><CV_EXT>`)
 - In the **CV language from the profile** (the `CV language:` line in CLAUDE.md's Identity section). When the profile does not set one, default to **English**. Never switch language per posting - the CV language is a profile-level choice, so all CVs stay consistent and reusable
 - Follow the moderncv/banking format from `05-cv-templates.md`
 - Tailor the profile statement and experience bullets to the specific role
@@ -171,7 +171,7 @@ Compare every date, employer, job title, and quantitative metric in both drafts 
 ### 4. Drafts to Review
 Both drafts are provided inline below. Do NOT use the Read tool on the draft files — use these exact texts.
 
-<CV_DRAFT file="cv/main_<COMPANY>_<ROLE><CV_EXT>">
+<CV_DRAFT file="cv/<COMPANY>_<ROLE><CV_EXT>">
 <INSERT_CV_DRAFT_HERE>
 </CV_DRAFT>
 
@@ -192,7 +192,7 @@ Return your feedback in **two parts**:
 A JSON array of concrete edits the drafter can apply directly without re-reading the files. Each edit is an object:
 ```json
 {
-  "file": "cv/main_<COMPANY>_<ROLE><CV_EXT>" | "cover_letters/cover_<COMPANY>_<ROLE><COVER_EXT>",
+  "file": "cv/<COMPANY>_<ROLE><CV_EXT>" | "cover_letters/cover_<COMPANY>_<ROLE><COVER_EXT>",
   "old_string": "<exact text currently in the draft>",
   "new_string": "<replacement text>",
   "reason": "<one-line rationale: keyword match / company angle / reframing / style / grounding>"
@@ -243,7 +243,7 @@ After all edits are applied, the two files on disk are the final drafts.
 Use `<CV_COMPILE>` and `<COVER_COMPILE>` resolved in Step 2 (the active template's declared compile command, or the stock defaults below if no custom template is active):
 
 ```bash
-cd cv && lualatex -interaction=nonstopmode main_<company>_<role>.tex
+cd cv && lualatex -interaction=nonstopmode <company>_<role>.tex
 cd ../cover_letters && xelatex -interaction=nonstopmode cover_<company>_<role>.tex
 ```
 
@@ -258,9 +258,9 @@ If either compile fails, fix the error and re-compile until clean.
 **Measure first, then look.** A visual read catches gross breakage but cannot tell you that a page is 40% empty, and the failure below survives both a clean compile and a correct page count:
 
 ```bash
-python3 tools/verify_pdf.py cv/main_<company>_<role>.pdf --pages 2
+python3 tools/verify_pdf.py cv/<company>_<role>.pdf --pages 2
 python3 tools/verify_pdf.py cover_letters/cover_<company>_<role>.pdf --pages 1
-python3 tools/verify_layout.py cv/main_<company>_<role>.pdf
+python3 tools/verify_layout.py cv/<company>_<role>.pdf
 python3 tools/verify_layout.py cover_letters/cover_<company>_<role>.pdf
 ```
 
@@ -276,7 +276,7 @@ The thresholds are calibrated for the stock moderncv and `cover.cls` geometry; a
 
 Then read both PDFs via the Read tool and verify:
 
-**CV (`cv/main_<company>_<role>.pdf`):**
+**CV (`cv/<company>_<role>.pdf`):**
 - [ ] Exactly 2 pages (not 1, not 3)
 - [ ] No orphaned `\cventry` titles — a job/education title line must never sit alone at the bottom of page 1 with its bullets on page 2. This is the most common failure.
 - [ ] Section headings are not isolated at the top of page 2 with only 1-2 lines below
@@ -308,7 +308,7 @@ An ATS parser reads the PDF's embedded **text layer**, not the rendered page —
 **1. Extract the text layer:**
 
 ```bash
-python3 tools/verify_pdf.py cv/main_<company>_<role>.pdf --ascii-dates --dump-text cv/main_<company>_<role>.txt
+python3 tools/verify_pdf.py cv/<company>_<role>.pdf --ascii-dates --dump-text cv/<company>_<role>.txt
 ```
 
 `--ascii-dates` is the date-range check from `05-cv-templates.md` ("Date fields must be ASCII ranges"): it exits 1 if the raw text layer has a year joined to a Unicode dash - the en-dash LaTeX makes from `--`, which a Workday import dropped together with the date - naming each hit and its code point. It reads the raw layer, not the folded comparison `--contains` uses, which is why `--contains "2016-2024"` cannot catch this. The dump is written before the check runs, so a failure still leaves the `.txt`. Fix a hit in the `<CV_EXT>` date argument (a single ASCII hyphen), then re-run 5a-5c and re-extract.
@@ -316,7 +316,7 @@ python3 tools/verify_pdf.py cv/main_<company>_<role>.pdf --ascii-dates --dump-te
 The command prints `extractor: pypdf` or `extractor: pdftotext`. Record that name in the Step 6 report. Read the `.txt` file. If that tool is unavailable, the Poppler fallback is:
 
 ```bash
-cd cv && pdftotext -layout -enc UTF-8 main_<company>_<role>.pdf main_<company>_<role>.txt
+cd cv && pdftotext -layout -enc UTF-8 <company>_<role>.pdf <company>_<role>.txt
 ```
 
 **2. Parseability checks** on the extracted text:
@@ -351,7 +351,7 @@ After the final clean compile (and after 5b-5d have passed), delete the intermed
 
 - **Stock or custom LaTeX toolchain:**
   ```bash
-  rm -f cv/main_<company>_<role>.{aux,log,out,fls,fdb_latexmk,synctex.gz} cover_letters/cover_<company>_<role>.{aux,log,out,fls,fdb_latexmk,synctex.gz}
+  rm -f cv/<company>_<role>.{aux,log,out,fls,fdb_latexmk,synctex.gz} cover_letters/cover_<company>_<role>.{aux,log,out,fls,fdb_latexmk,synctex.gz}
   ```
 - **Custom template whose compile command redirects to `build/`:** also `rm -rf cv/build cover_letters/build` (`/add-template` Step 4 already says `/apply` must delete it).
 - **Zero-artifact toolchain (e.g. `typst compile`):** nothing to delete.
@@ -374,7 +374,7 @@ Summarize 3-5 key decisions made to tailor the application:
 
 ### Files Created
 List the files written:
-- `cv/main_<company>_<role><CV_EXT>`
+- `cv/<company>_<role><CV_EXT>`
 - `cover_letters/cover_<company>_<role><COVER_EXT>`
 
 Tell the user: "Both files are ready for your review. Open them to check the final output before compiling."
