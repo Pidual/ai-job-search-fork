@@ -1,0 +1,95 @@
+% One-page CV template "onepage-blue"
+% Plain article class, Helvetica-style sans (TeX Gyre Heros), moderncv blue
+% accents on the name, section headings and rules. Single column, so the ATS
+% text layer reads top to bottom in visual order.
+% Compile: lualatex (fontspec). Hard limit: exactly 1 page.
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[top=0.6in,bottom=0.55in,left=0.7in,right=0.7in]{geometry}
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Heros}
+\setsansfont{TeX Gyre Heros}
+\usepackage{xcolor}
+% moderncv "blue" color1 (rgb 0.22,0.45,0.70)
+\definecolor{cvblue}{rgb}{0.22,0.45,0.70}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{needspace}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    pdftitle={[YOUR_NAME] - CV},
+    pdfauthor={[YOUR_NAME]},
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{1.08}
+\emergencystretch=1em
+\frenchspacing
+
+% Section heading: bold uppercase in blue, full-width blue rule beneath.
+\titleformat{\section}
+    {\large\bfseries\color{cvblue}}
+    {}{0pt}{\MakeUppercase}
+    [\vspace{-0.4ex}{\color{cvblue}\titlerule[0.6pt]}]
+\titlespacing*{\section}{0pt}{9pt}{5pt}
+
+% \cventry{Bold title}{Right-aligned date}
+% Keeps the title line together with at least three lines of its body.
+% A long title wraps inside its own box; the date never breaks.
+\newcommand{\cventry}[2]{%
+    \needspace{4\baselineskip}%
+    \par\noindent\parbox[t]{0.8\textwidth}{\raggedright\textbf{#1}}%
+    \hfill\mbox{#2}\par\nopagebreak\vspace{2pt}}
+% \cvdesc{Paragraph describing the entry}
+\newcommand{\cvdesc}[1]{#1\par\vspace{4pt}}
+% \cvline{Bold title}{inline description}{date} - one-line items
+\newcommand{\cvline}[3]{%
+    \noindent\parbox[t]{0.89\textwidth}{\raggedright\textbf{#1} -- #2}%
+    \hfill\parbox[t]{0.1\textwidth}{\raggedleft #3}\par\vspace{1pt}}
+% \cvskill{Label}{comma-separated skills} - one line of the Skills section
+\newcommand{\cvskill}[2]{\noindent\textbf{#1:} #2\par\vspace{1pt}}
+% \cvcert{Certification}{Date}
+\newcommand{\cvcert}[2]{\noindent\textbf{#1}\hfill #2\par}
+
+\setlist[itemize]{leftmargin=1.2em,topsep=1pt,itemsep=0pt,parsep=0pt}
+
+\begin{document}
+
+% ---------- Header ----------
+{\fontsize{22}{26}\selectfont\bfseries\color{cvblue}\MakeUppercase{[YOUR_NAME]}\par}
+\vspace{6pt}
+\textbf{Email:} \href{mailto:[YOUR_EMAIL]}{[YOUR_EMAIL]} \quad | \quad \textbf{Phone:} [YOUR_PHONE]\par
+\textbf{GitHub:} \href{https://[YOUR_GITHUB]}{[YOUR_GITHUB]} \quad | \quad \textbf{LinkedIn:} \href{https://[YOUR_LINKEDIN]}{[YOUR_LINKEDIN]}\par
+
+% ---------- Summary ----------
+\section{Professional Summary}
+[PROFILE_STATEMENT - 4 to 5 lines, tailored to the posting]\par
+
+% ---------- Experience ----------
+\section{Experience}
+\cventry{[COMPANY] -- [TEAM] -- [COUNTRY]}{[START] - [END]}
+\cvdesc{[One paragraph, 3 to 4 lines: what you did and the outcome, using the posting's own terms.]}
+
+\cventry{[COMPANY] -- [TEAM] -- [COUNTRY]}{[START] - [END]}
+\cvdesc{[One paragraph, 3 to 4 lines.]}
+
+% ---------- Education ----------
+\section{Education}
+\cventry{[DEGREE]}{[START] - [END]}
+[UNIVERSITY]\par
+
+% ---------- Projects ----------
+\section{Projects}
+\cventry{[FLAGSHIP PROJECT]}{[YEAR]}
+\cvdesc{[One paragraph, 2 to 3 lines.]}
+\cvline{[SHORT PROJECT]}{[one-line description]}{[YEAR]}
+\cvline{[SHORT PROJECT]}{[one-line description]}{[YEAR]}
+
+% ---------- Certifications ----------
+\section{Courses and Certifications}
+\cvcert{[CERTIFICATION]}{[DATE]}
+\cvcert{[CERTIFICATION]}{[DATE]}
+
+\end{document}

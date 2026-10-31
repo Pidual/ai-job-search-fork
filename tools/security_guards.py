@@ -178,6 +178,9 @@ REQUIRED_IGNORE_RULES = [
     "!cv/main_example.tex",
     # ATS text extractions (/apply step 5d) carry the CV's full text.
     "cv/*.txt",
+    # /apply drafts into cv/drafts/; /outcome moves submitted CVs to cv/sent/.
+    "cv/drafts/",
+    "cv/sent/",
     "cover_letters/cover_*.*",
     # /apply also recognizes the uppercase Cover_* naming variant.
     "cover_letters/Cover_*.*",

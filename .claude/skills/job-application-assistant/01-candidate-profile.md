@@ -10,14 +10,14 @@ CompTIA certificate, EPAM/Syndicate activity export) plus the candidate's own co
 
 ## Identity
 - **Name:** Carlos Hernando Lozano Pérez (CVs: "Carlos Hernando Lozano Perez"; LinkedIn/certs: "Carlos Lozano")
-- **Location:** Yopal, Casanare, Colombia
+- **Location:** Yopal, Casanare, Colombia (for fit/commute evaluation only - **never write it on a CV**, candidate's instruction 30 Oct 2026)
 - **Phone:** +57 312 463 2164 (WhatsApp preferred)
 - **Email:** carlosmapache1@gmail.com
 - **LinkedIn:** https://www.linkedin.com/in/carloslozanoperez/
 - **GitHub:** https://github.com/Pidual
 - **Status:** Open to work, available immediately. Most recent role: Information Security Analyst at Profound (contracted through OperationsArmy), remote, Sep 2026 - Oct 2026; the engagement ended in Oct 2026 (candidate was let go, reported 2026-10-26)
 - **Professional standing:** Profesional universitario in Colombia, holds a tarjeta profesional
-- **Current target (Oct 2026):** IT support, help desk, NOC and junior sysadmin roles, to gain production infrastructure experience fast. GRC / cloud security / SOC remain longer-term goals.
+- **Current target (from 30 Oct 2026):** ALL IN on GRC / Information Security (ISO 27001, SOC 2, compliance, risk, audit). IT support / help desk / NOC / sysadmin roles are dropped. Cloud security and SOC remain secondary interests.
 - **Constraints:** Open to on-site or hybrid work in any city in Colombia; remote strongly preferred. Prefers long-term positions but accepts fixed-term / project contracts while job hunting (the Profound role was an independent-contractor engagement and has ended).
 
 ### Languages

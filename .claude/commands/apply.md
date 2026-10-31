@@ -4,6 +4,8 @@ You are orchestrating a two-agent job application workflow. The job posting is p
 
 Follow these steps **exactly in order**. Do not skip steps.
 
+**CV folder rule.** CVs are split by status: `cv/drafts/` holds CVs not yet submitted, `cv/sent/` holds submitted ones (`/outcome` and `/gmail-sync` move a CV there when its row leaves `drafted`). `/apply` always writes the new CV into `cv/drafts/`, so every `cv/<company>_<role>...` path in this command means `cv/drafts/<company>_<role>...` - the file written, the compile (run from `cv/drafts/`), the verify and cleanup commands, the "Files Created" list and the tracker's `cv_file` column. A structural reference CV may come from either subfolder. `cv/main_example.tex` stays in `cv/`.
+
 **Standing rule — write new facts back to the profile.** If the user confirms, corrects or supplies a fact that is not already in `01-candidate-profile.md` — a metric, a project detail, a skill, a scope correction — update that file in the same turn. Do not leave it living only in the conversation or in a draft.
 
 This is not bookkeeping. A fact that exists only in chat **will be treated as unsupported by a later session and stripped from drafts as a fabrication.** Anything absent from the sources does not exist as far as future drafting is concerned, and the loss is silent — a real achievement quietly disappears from every subsequent CV.
@@ -108,12 +110,12 @@ Also read the most recent existing CV and cover letter files for concrete struct
 
 *In both filenames below, `<company>_<role>` is derived by the **Subfolder naming** rule in `documents/README.md` — the same rule `/outcome` Step 1.4 uses for the archive folder, so a `/` or other path character in a company or role name can never split the filename across directories.*
 
-### CV (`cv/<company>_<role><CV_EXT>`)
+### CV (`cv/drafts/<company>_<role><CV_EXT>`)
 - In the **CV language from the profile** (the `CV language:` line in CLAUDE.md's Identity section). When the profile does not set one, default to **English**. Never switch language per posting - the CV language is a profile-level choice, so all CVs stay consistent and reusable
-- Follow the moderncv/banking format from `05-cv-templates.md`
+- Follow the active CV template from `05-cv-templates.md` (its `ACTIVE-TEMPLATE` block and the template's `TEMPLATE.md` when present; otherwise moderncv/banking)
 - Tailor the profile statement and experience bullets to the specific role
 - Reframe skills and achievements to match job requirements
-- Keep to 2 pages
+- Keep to the active template's page limit (stock: 2 pages)
 - **Grounding Audit:** Before writing to disk, audit all tailored bullet points against the union of three sources: `.claude/skills/job-application-assistant/01-candidate-profile.md` + the master CV (`cv/main_example.tex`) + `CLAUDE.md`'s Candidate Profile section to verify that all dates, roles, and metrics match exactly (zero profile drift or fabrication).
 
 ### Cover Letter (`cover_letters/<company>_<role>_cover<COVER_EXT>`)
@@ -277,7 +279,7 @@ The thresholds are calibrated for the stock moderncv and `cover.cls` geometry; a
 Then read both PDFs via the Read tool and verify:
 
 **CV (`cv/<company>_<role>.pdf`):**
-- [ ] Exactly 2 pages (not 1, not 3)
+- [ ] Exactly the active template's page limit (stock: 2 pages)
 - [ ] No orphaned `\cventry` titles — a job/education title line must never sit alone at the bottom of page 1 with its bullets on page 2. This is the most common failure.
 - [ ] Section headings are not isolated at the top of page 2 with only 1-2 lines below
 - [ ] No awkward whitespace gaps
@@ -374,7 +376,7 @@ Summarize 3-5 key decisions made to tailor the application:
 
 ### Files Created
 List the files written:
-- `cv/<company>_<role><CV_EXT>`
+- `cv/drafts/<company>_<role><CV_EXT>`
 - `cover_letters/<company>_<role>_cover<COVER_EXT>`
 
 Tell the user: "Both files are ready for your review. Open them to check the final output before compiling."

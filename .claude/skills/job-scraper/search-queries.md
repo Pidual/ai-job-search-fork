@@ -1,7 +1,7 @@
 # Search Queries for Job Scraper
 
-<!-- Configured by /setup on 2026-10-25 for Carlos Hernando Lozano Pérez: IT support / help desk / NOC / junior sysadmin first
-(retargeted 2026-10-26), then GRC / InfoSec, Cloud Security / AWS, SOC. Market: Colombia (any city) + remote. -->
+<!-- Configured by /setup on 2026-10-25 for Carlos Hernando Lozano Pérez. Retargeted 2026-10-30: ALL IN on GRC / InfoSec
+(IT support / help desk / NOC / sysadmin dropped). Cloud Security / SOC kept as secondary. Market: Colombia (any city) + remote. -->
 
 ## Installed portal CLIs (primary for `/scrape`)
 
@@ -28,30 +28,9 @@ Secondary (company career pages via Google):
 
 Organized by function. Combine with location terms (Colombia, Bogotá, Medellín, Cali, remoto/remote) where the site supports it.
 
-### Priority 1: IT Support / Help Desk / NOC / Junior Sysadmin (current focus since 2026-10-26)
+### Priority 1: GRC / Information Security Analyst (ALL-IN focus since 2026-10-30)
 
-The candidate's current target: entry-level infrastructure roles that build production experience fast. Help desk and L1 roles are acceptable; prefer ones with escalation to L2 / sysadmin work, Linux, networking, Windows Server/AD or cloud exposure. Exclude postings stating pay below COP 3,200,000.
-
-```
-"soporte técnico" OR "mesa de ayuda" OR "help desk" Colombia
-"técnico de soporte" OR "analista de soporte" TI Colombia
-"soporte nivel 1" OR "soporte nivel 2" OR "service desk" Colombia
-"analista NOC" OR "NOC analyst" OR "operador NOC" OR "monitoreo de red" Colombia
-"administrador de sistemas" OR "sysadmin" OR "administrador linux" junior Colombia
-"administrador de servidores" OR "Windows Server" OR "Active Directory" analista Colombia
-"ingeniero de redes" OR "analista de redes" OR "network engineer" junior Colombia
-"soporte de infraestructura" OR "analista de infraestructura" Colombia
-"IT Support" OR "Help Desk" OR "Service Desk" bilingual Colombia OR remote LATAM
-"NOC Engineer" OR "Junior System Administrator" OR "Linux Support" remote LATAM
-site:co.computrabajo.com "mesa de ayuda" OR "soporte técnico"
-site:elempleo.com "soporte técnico" OR "analista NOC"
-```
-
-Use `/scrape support` (or "helpdesk", "noc", "sysadmin", "linux", "redes") to run this category on its own.
-
-### Priority 2: GRC / Information Security Analyst (best current fit)
-
-Compliance, ISO 27001, SOC 2, risk, audit, security policy work.
+Compliance, ISO 27001, SOC 2, risk, audit, security policy, IT audit, third-party/vendor risk. Default `/scrape` runs this category first and widest. Do not search IT support / help desk / NOC / sysadmin roles.
 
 ```
 "analista de seguridad de la información" Colombia
@@ -62,12 +41,18 @@ Compliance, ISO 27001, SOC 2, risk, audit, security policy work.
 "Information Security Analyst" Colombia OR LATAM remote
 "GRC Analyst" OR "Compliance Analyst" "SOC 2" remote LATAM
 "Security Compliance Analyst" ISO 27001 remote
+"GRC Specialist" OR "GRC Associate" OR "Governance Risk Compliance" remote
+"Third-Party Risk Analyst" OR "Vendor Risk" OR "TPRM" remote LATAM
+"IT Auditor" OR "auditor de TI" OR "auditor de sistemas" Colombia
+"Technology Risk Analyst" OR "analista de riesgo tecnológico" OR "riesgo de TI" Colombia
+"analista de gobierno de seguridad" OR "gobierno de TI" Colombia
+"SOC 2" OR "Vanta" OR "Drata" compliance analyst remote
 site:linkedin.com/jobs "Information Security Analyst" Colombia
 site:co.computrabajo.com "seguridad de la información"
 site:elempleo.com "seguridad de la información" analista
 ```
 
-### Priority 3: Cloud Security / AWS (strongest desire)
+### Priority 2: Cloud Security / AWS (secondary - prefer cloud GRC / cloud compliance)
 
 Roles that combine security with hands-on AWS.
 
@@ -82,7 +67,7 @@ Roles that combine security with hands-on AWS.
 site:linkedin.com/jobs "Cloud Security" Colombia
 ```
 
-### Priority 4: SOC Analyst
+### Priority 3: SOC Analyst (secondary)
 
 Monitoring, SIEM, detection - entry level.
 
@@ -95,7 +80,7 @@ site:co.computrabajo.com "analista SOC"
 site:elempleo.com ciberseguridad analista
 ```
 
-### Priority 5: Broader - adjacent roles (wider net)
+### Priority 4: Broader - adjacent GRC roles (wider net)
 
 Roles where the GRC + automation + IAM/cloud mix still fits. Score carefully against the motivation filter (avoid pure ticket queues).
 

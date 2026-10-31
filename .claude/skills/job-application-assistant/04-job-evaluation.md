@@ -112,14 +112,13 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-0. **IT Support / Help Desk / NOC / Junior Sysadmin** (current focus, Oct 2026) - the fastest route to production experience with servers, networks, Linux, Windows/AD and cloud. Score these 60+ on Career Alignment when they offer hands-on infrastructure exposure or a path to L2 / sysadmin; do not penalise entry-level ticket work as "repetitive" by itself.
-1. **GRC / Information Security Analyst** (best current fit) - ISO 27001, SOC 2, compliance, risk, audit
+1. **GRC / Information Security Analyst** (ALL-IN focus from 30 Oct 2026) - ISO 27001, SOC 2, compliance, risk, audit, IT audit, third-party risk. IT support / help desk / NOC / sysadmin roles are dropped: score them 0-39 on Career Alignment
 2. **Cloud Security / AWS** (strongest desire) - roles that put AWS hands-on work into production; GRC roles with cloud scope score higher
 3. **SOC Analyst** (also interested) - monitoring, SIEM, detection
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
 - Tasks that energize: truly mission-critical systems; fixing, building, improving and "making and destroying" things; automation; hands-on cloud and security engineering
-- Tasks that drain: repetitive work with no learning or growth (data entry, copy-paste evidence collection with no improvement scope; L1 ticket queues are acceptable for now as a stepping stone - see career goal 0) ( data entry, copy-paste evidence collection with no improvement scope)
+- Tasks that drain: repetitive work with no learning or growth (data entry, copy-paste evidence collection with no improvement scope; L1 ticket queues)
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:

@@ -13,7 +13,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ### Identity
 - **Name:** Carlos Hernando Lozano Pérez
-- **Location:** Yopal, Casanare, Colombia (open to on-site/hybrid in any Colombian city; remote preferred)
+- **Location:** Yopal, Casanare, Colombia (open to on-site/hybrid in any Colombian city; remote preferred). **Never put the home location on a CV.**
 - **Contact:** +57 312 463 2164 (WhatsApp) | carlosmapache1@gmail.com | linkedin.com/in/carloslozanoperez | github.com/Pidual
 - **Languages:**
   | Language | Level |
@@ -73,17 +73,17 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 - Cloud security and hands-on AWS work
 
 ### Target Sectors
-- **Current focus (Oct 2026): IT support, help desk, NOC and junior sysadmin roles** - to gain production infrastructure experience fast; any sector (MSPs, BPO/outsourcing, telecoms, banks, SaaS, retail, healthcare)
-- Information security / GRC: banks, fintech, SaaS and tech companies with SOC 2 / ISO 27001 programs, consultancies (Big Four, MSSPs)
+- **Current focus (from 30 Oct 2026): ALL IN on GRC / Information Security** - banks, fintech, SaaS and tech companies with SOC 2 / ISO 27001 programs, consultancies (Big Four, MSSPs). IT support / help desk / NOC / sysadmin roles are dropped - do not target them
 - Cloud security: AWS-heavy tech companies, cloud consultancies
 - SOC: MSSPs, banks, telecoms
 
 ### Deal-breakers
 - Pay below COP 3,200,000/month
-- Predominantly repetitive work with no growth path (entry-level help desk / NOC roles are acceptable as a stepping stone to sysadmin / infrastructure)
+- Predominantly repetitive work with no growth path
+- IT support, help desk, NOC and junior sysadmin roles (dropped 30 Oct 2026 - GRC only)
 
 ## Repo Structure
-- `cv/` - LaTeX CV variants (moderncv template, banking style)
+- `cv/` - LaTeX CVs: `cv/drafts/` = not yet submitted (where `/apply` writes), `cv/sent/` = submitted (`/outcome` and `/gmail-sync` move a CV here when its tracker row leaves `drafted`); `cv/main_example.tex` stays in `cv/`
 - `cover_letters/` - LaTeX cover letters (custom cover.cls template)
 - `.claude/skills/` - AI skill definitions for the application workflow
 - `.agents/skills/` - Job search CLI tools
@@ -91,7 +91,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 ## Workflow for New Job Applications
 1. User provides a job posting (URL or text)
 2. **Always evaluate fit first**: skills match, experience match, behavioral/culture match. Present this assessment to the user before proceeding.
-3. If good fit: create targeted CV (`cv/<company>_<role>.tex`). **No cover letter by default** (most target employers do not ask for one); draft `cover_letters/<company>_<role>_cover.tex` only when the user or the posting asks for one
+3. If good fit: create targeted CV (`cv/drafts/<company>_<role>.tex`). **No cover letter by default** (most target employers do not ask for one); draft `cover_letters/<company>_<role>_cover.tex` only when the user or the posting asks for one
 4. **Verify both documents** (see Verification Checklist below)
 5. Prepare interview talking points based on the role requirements and your strengths
 
@@ -113,7 +113,7 @@ After creating or updating a CV or cover letter, re-read the generated file and 
 - [ ] Nice-to-have requirements are highlighted where there is a match
 
 ### Consistency
-- [ ] CV follows the standard 2-page moderncv/banking format
+- [ ] CV follows the active CV template (currently `onepage-blue`, 1 page - see the `ACTIVE-TEMPLATE` block in `05-cv-templates.md`; stock fallback is 2-page moderncv/banking)
 - [ ] Cover letter uses cover.cls template and established structure
 - [ ] Tone is consistent across CV and cover letter
 - [ ] No contradictions between CV and cover letter content
@@ -129,7 +129,7 @@ After creating or updating a CV or cover letter, re-read the generated file and 
 ### Compiled PDF verification (MANDATORY - never skip)
 Both documents MUST be compiled and visually inspected via the Read tool on the PDF output. "Looks fine in the .tex" is not acceptable - LaTeX page-break decisions are unpredictable. Iterate until these all pass:
 - [ ] CV compiled with **lualatex** (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors). Cover letter compiled with **xelatex** (cover.cls requires fontspec). If a custom template is active (registered via `/add-template`), compile with its declared command instead — see the `ACTIVE-TEMPLATE` block in `05-cv-templates.md`/`06-cover-letter-templates.md`.
-- [ ] **CV is exactly 2 pages** - not 1, not 3
+- [ ] **CV matches the active template's page limit exactly** - currently **1 page** (`onepage-blue`); 2 pages only for the stock moderncv template
 - [ ] **No orphaned `\cventry` titles** - a job/education title must never sit at the bottom of a page with its bullets spilling to the next page. Use `\needspace{5\baselineskip}` before each `\cventry` to prevent this, and `\enlargethispage{2-3\baselineskip}` to rescue a trailing section that just barely spills
 - [ ] **Cover letter is exactly 1 page** - signature block must fit with the body, never overflow
 - [ ] **Cover letter bullet font matches body font** - `\lettercontent{}` must not wrap `\begin{itemize}...\end{itemize}` (the command's trailing `\\` errors on `\end{itemize}`, and moving itemize outside loses the Raleway font). Standard pattern: close `\lettercontent{}`, then wrap the list in `{\raggedright\fontspec[Path = OpenFonts/fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont \begin{itemize}...\end{itemize}\par}`
