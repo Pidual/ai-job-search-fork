@@ -87,7 +87,7 @@ Write a single self-contained HTML file. All CSS is inline in a `<style>` block.
   - Interview: `#f59e0b` (amber)
   - Offer: `#8b5cf6` (purple)
   - Hired: `#22c55e` (green)
-  - Rejected/Closed: `#ef4444` (red)
+  - Rejected/Closed: `#9ca3af` (muted gray)
 - **Font:** system-ui stack, no web fonts
 - **Stat cards:** white background, subtle shadow, large bold number, label below, left border in status colour
 - **Charts:** contained in a 2-column grid on wide screens, stacked on narrow

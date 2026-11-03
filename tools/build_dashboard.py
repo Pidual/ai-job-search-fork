@@ -42,7 +42,7 @@ FIELDS = ["date", "company", "sector", "role", "role_type", "channel", "status",
 
 BUCKETS = ["Drafted", "Active", "Interview", "Offer", "Hired", "Rejected/Closed"]
 COLORS = {"Drafted": "#64748b", "Active": "#3b82f6", "Interview": "#f59e0b",
-          "Offer": "#8b5cf6", "Hired": "#22c55e", "Rejected/Closed": "#ef4444"}
+          "Offer": "#8b5cf6", "Hired": "#22c55e", "Rejected/Closed": "#9ca3af"}
 STATUS_MAP = {"drafted": "Drafted", "applied": "Active", "interview": "Interview",
               "offer": "Offer", "hired": "Hired"}
 CLOSED = {"rejected", "no_response", "no response", "offer_declined",
