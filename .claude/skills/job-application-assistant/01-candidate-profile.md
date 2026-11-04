@@ -15,7 +15,7 @@ CompTIA certificate, EPAM/Syndicate activity export) plus the candidate's own co
 - **Email:** carlosmapache1@gmail.com
 - **LinkedIn:** https://www.linkedin.com/in/carloslozanoperez/
 - **GitHub:** https://github.com/Pidual
-- **Status:** Open to work, available immediately. Most recent role: Information Security Analyst at Profound (contracted through OperationsArmy), remote, Sep 2026 - Oct 2026; the engagement ended in Oct 2026 (candidate was let go, reported 2026-10-26)
+- **Status:** Open to work, available immediately. Most recent role: Information Security Analyst at Profound (contracted through OperationsArmy), remote, Sep 2026 - Oct 2026; the engagement ended 22 Oct 2026 (position eliminated by the client's AI-driven workflow changes, not performance-related, per OpsArmy reference letter)
 - **Professional standing:** Profesional universitario in Colombia, holds a tarjeta profesional
 - **Current target (hyper-focus from 3 Nov 2026, candidate: "My only option is GRC"):** Information Security governance and GRC only (ISO 27001 / SGSI, SOC 2, security compliance, IT/technology risk, IT audit, third-party risk, security policy). SOC / monitoring, security engineering, vulnerability management and cloud security engineering roles are no longer targeted (cloud only when it is cloud compliance / GRC). IT support / help desk / NOC / sysadmin stay dropped (since 30 Oct 2026).
 - **Constraints:** Open to on-site or hybrid work in any city in Colombia; remote strongly preferred. Prefers long-term positions but accepts fixed-term / project contracts while job hunting (the Profound role was an independent-contractor engagement and has ended).
@@ -38,7 +38,7 @@ CompTIA certificate, EPAM/Syndicate activity export) plus the candidate's own co
 ## Professional Experience
 
 ### Information Security Analyst - Profound (contracted through OperationsArmy) (Sep 2026 - Oct 2026)
-Remote (US company), full-time, independent contractor. Engagement ended Oct 2026 (let go). On CVs and letters write past tense and the date range only; never state or imply the reason for leaving.
+Remote (US company), full-time, independent contractor. Engagement 1 Sep - 22 Oct 2026 (dates per OpsArmy reference letter). Position eliminated when the client introduced AI-driven workflow changes; OpsArmy confirmed in writing it was not performance-related. On CVs write past tense and the date range only; the reason is for interviews (see 07-interview-prep.md).
 - Supported SOC 2 and ISO 27001 compliance: tracking security controls, collecting evidence and assisting audits, using Vanta to monitor progress per framework
 - Maintained and documented security policies and procedures
 - Worked with Engineering, Legal and Product to gather and validate security information, in an English-speaking remote environment
@@ -99,4 +99,8 @@ None.
 - **First Place - Hackathon**, Universidad Pedagógica y Tecnológica de Colombia (May 2026)
 
 ## References
-No references on file yet. Use "Available upon request."
+- **Melissa Letts** - General Manager, OpsArmy (OperationsArmy) - Melissa.Letts@operationsarmy.com. Letter of reference dated 29 Oct 2026, on file at `documents/references/OpsArmy_Melissa_Letts_reference_2026-10-29.pdf`.
+  - Confirms: engagement 1 Sep 2026 - 22 Oct 2026; supported information security operations for a client account; security documentation, questionnaire-related activities, operational workflows; distributed team.
+  - Describes him as: attentive to detail, adaptable, strong communicator, learns established processes quickly, professional, collaborative.
+  - Reason for leaving (in writing): the client's AI-driven workflow changes reduced staffing and eliminated the position; "not related to his individual performance."
+- On CVs: "Available upon request." List Melissa Letts by name only if the candidate confirms she agreed to be contacted. Do not attach the letter unless a posting asks for reference letters.

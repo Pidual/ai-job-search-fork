@@ -23,6 +23,7 @@ Carlos is a **builder-troubleshooter**: energized by hands-on, high-stakes techn
 - **Automating the manual:** Replaced a spreadsheet audit workflow with SGSI+ (9 flows, 1,361 evidence requests).
 - **Self-directed learning:** Homelab, AWS program (2nd on leaderboard), Security+ in parallel with work.
 - **Persistence on tedious-but-necessary work when it serves a goal:** hand-labeled 17,000+ images to train a custom model.
+- **Adaptable, quick to learn established processes, detail-oriented, collaborative:** *[From reference letter - Melissa Letts, General Manager, OpsArmy, 29 Oct 2026]* "a fast-paced environment that required attention to detail, adaptability, strong communication, and the ability to learn established processes quickly"; recommends him as "an adaptable, professional, and collaborative team member."
 
 ## How You Work Best
 - Mission-critical environments where reliability and security genuinely matter

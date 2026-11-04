@@ -69,9 +69,9 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 ## Common Tough Questions
 
 ### "Why did your role at Profound end?" / "Why are you available now?"
-> My role at Profound was an independent-contractor engagement through a staffing firm, and it ended in October 2026. In those two months I supported SOC 2 and ISO 27001 compliance in Vanta, completed customer security questionnaires and worked with Engineering, Legal and Product in English. Now I'm looking for a long-term position where I can grow, especially toward cloud security.
+> I was contracted to Profound through OpsArmy from September to October 2026. The client introduced AI-driven workflow changes that reduced staffing, and my position was eliminated. OpsArmy confirmed in my reference letter that it wasn't related to my performance. In those two months I supported SOC 2 and ISO 27001 compliance in Vanta, completed customer security questionnaires and worked with Engineering, Legal and Product in English. Now I'm looking for a long-term GRC role where I can grow.
 
-*(Draft only - the candidate has not shared why the engagement ended. Keep the answer short, factual and forward-looking, and never criticize Profound or OperationsArmy. Fill in a one-line honest reason once the candidate confirms one.)*
+*(Reason confirmed by the OpsArmy reference letter, 29 Oct 2026. Keep it short and neutral, never criticize Profound or OpsArmy, and offer the letter or the referee's contact if asked.)*
 
 ### "You don't have [specific skill/experience]."
 > Acknowledge the gap directly, then bridge: GRC controls knowledge + hands-on AWS labs + homelab, and the track record of learning fast (Security+, EPAM 2nd place, SGSI+ built from scratch).
