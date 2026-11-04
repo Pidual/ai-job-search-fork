@@ -355,7 +355,7 @@ The CV **must** fit on exactly 2 pages when compiled. Use these content limits a
 | Education | 2-3 entries |
 | Publications | 2-3 entries |
 | Awards | 3 entries, single line each |
-| References | "Available upon request." (single line) |
+| References | One line: Melissa Letts referee (see References in `01-candidate-profile.md`) |
 
 **If in doubt, cut rather than squeeze.** Reducing `\vspace` or geometry scale to force-fit content makes the CV look cramped.
 
