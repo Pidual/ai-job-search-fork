@@ -43,7 +43,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
   - Power BI data modeling (Power Query, star schema) for compliance dashboards
 
 ### Technical Skills
-- **Primary:** ISO/IEC 27001:2022, SOC 2, SOX and SARO controls (bank), Vanta, GRC evidence and control management, Microsoft Power Platform (Power Apps, Power Automate, Power BI, SharePoint)
+- **Primary:** ISO/IEC 27001:2022, SOC 2, SOX and SARO controls (bank), Vanta, GRC evidence and control management, Microsoft Power Platform - proficient, production use (Power Apps, Power Automate, Power BI, SharePoint)
 - **Secondary:** AWS (IAM, VPC, KMS, S3, Lambda, CloudWatch, CloudFormation - lab level), ELK Stack, Nessus, OpenVAS, Wireshark, Nmap, Kali Linux, OPNsense, Python, SQL, Java/Spring Boot, Docker, Terraform (basic), basic Active Directory
 - **Domain:** Information security governance, risk and compliance; banking and SaaS compliance
 - **Software:** Vanta, Power Platform, Proxmox VE, PyTorch, ONNX, Git, Linux, Claude Code

@@ -75,7 +75,7 @@ Bogotá, Colombia - Security & Cybersecurity Center of Excellence (area 9030 COE
 - Terraform (basic)
 
 ### Automation & Data
-- Microsoft Power Platform: Power Apps, Power Automate, Power BI (Power Query, star schema), SharePoint
+- **Microsoft Power Platform - proficient (production use at Banco de Bogotá, built SGSI+):** Power Apps, Power Automate, Power BI (Power Query, star schema, dashboards), SharePoint. CV phrasing: "Proficient in Microsoft Power Platform (Power Apps, Power Automate, Power BI, SharePoint)"
 - Python, SQL; PyTorch, ONNX, CUDA (ResNet50 project)
 
 ### Development & Systems
