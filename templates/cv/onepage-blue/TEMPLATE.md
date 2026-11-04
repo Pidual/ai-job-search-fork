@@ -13,24 +13,29 @@
 
 ## Style rules
 
-- Single column, US Letter, 10pt TeX Gyre Heros. Blue accents (moderncv blue, `cvblue` = rgb 0.22,0.45,0.70) only on the name, section headings and the rule under each heading; all body text black.
-- Header: name in bold uppercase blue, then two lines: `Email: ... | Phone: ...`, `GitHub: ... | LinkedIn: ...`, bold labels and values as literal text (ATS needs the literal email/phone). Spanish CVs use `Correo / Teléfono`.
+- Single column, US Letter, 10pt TeX Gyre Heros. Blue accents (moderncv blue, `cvblue` = rgb 0.22,0.45,0.70) only on the name, section headings, the rule under each heading, the employer/school line of each entry and the bullet markers; all other body text black.
+- Header: name in bold uppercase blue, then a one-line **headline** (`\large`, black) naming the target role or closest truthful title plus 2-3 frameworks (e.g. `Information Security Analyst | GRC -- ISO/IEC 27001, SOC 2`), then two lines: `Email: ... | Phone: ...`, `GitHub: ... | LinkedIn: ...`, bold labels and values as literal text (ATS needs the literal email/phone). Spanish CVs use `Correo / Teléfono`.
 - **Never put the candidate's home location on the CV** (no Location/Ubicación line, no city of residence anywhere - candidate's standing instruction, 30 Oct 2026). Employer and school locations in entries are fine; on-site availability for the target city may go in the summary when the posting requires it.
-- Optional Skills section (`Skills` / `Competencias`) after the Summary: at most 4 `\cvskill{Label}{items}` lines, each kept to about one printed line.
-- Section order: Professional Summary -> Experience -> Education -> Projects -> Courses and Certifications. A short Skills section may be added after the Summary only when the posting is keyword-heavy and space allows. Headings are written in the CV's language (e.g. Perfil Profesional / Experiencia / Educación / Proyectos / Cursos y Certificaciones for Spanish); `\section` uppercases them automatically.
-- Experience entries: `\cventry{Company -- Team -- Country}{Mon YYYY - Mon YYYY}` then `\cvdesc{...}` with **one paragraph of 3-4 lines** per role - prose, not bullets. Weave in metrics (1,361 evidence requests, 90.4% delivery rate, 9 workflows) and the posting's own keywords.
-- Projects: one flagship project with `\cventry` + `\cvdesc` (2-3 lines), then up to two `\cvline{Title}{one-line description}{Year}` items.
+- Skills section (`Skills` / `Competencias`) after the Summary: 3 `\cvskill{Label}{items}` lines (4 at most), each about one printed line, using the posting's exact keyword spellings.
+- Section order: Professional Summary -> Skills -> Experience -> Education -> (Projects, optional) -> Courses and Certifications. Headings are written in the CV's language (e.g. Perfil Profesional / Experiencia / Educación / Proyectos / Cursos y Certificaciones for Spanish); `\section` uppercases them automatically.
+- **Professional Summary: 3 lines max.** Who you are, the 2-3 frameworks/tools the posting names, one differentiator. Never restate the experience bullets (no metrics duplicated between summary and bullets).
+- **Experience entries (v2, bullets - 3 Nov 2026):** `\cventry{Role}{Employer -- Team -- Location}{Mon YYYY - Mon YYYY}` then a `cvbullets` list. Line 1 = bold role + date; line 2 = employer in blue. Keep the role argument to one printed line - team and location go in the employer argument. **No prose paragraphs.**
+  - 3 bullets for the short Profound role, 4 for Banco de Bogotá. Each bullet: past-tense verb first, one printed line (two at most), the posting's own terms, a number where one truthfully exists.
+  - Lead the Banco de Bogotá list with the SGSI+ result bullet (1,361 evidence requests, 90.4% delivery, 9 workflows, external-auditor recognition) - it is the strongest line on the page.
+  - Banco de Bogotá role line: `Aprendiz Practicante -- SGSI y Cumplimiento ISO/IEC 27001` (ES) / `Business Intern -- ISMS & ISO/IEC 27001 Compliance` (EN): the official title plus the function, so "intern" is not the only thing read.
+- Education: `\cventry{Degree}{University, City}{dates}` then one line (GPA, thesis graded Sobresaliente, tarjeta profesional).
+- Projects: **optional.** Include one `\cvline` (e.g. the security homelab) only when the posting is technical enough to value it; for pure GRC/audit roles drop the section. Never include the ResNet50 image classifier on a GRC CV.
 - Certifications: `\cvcert{Name}{Mon YYYY}`, one per line, most relevant first; awards may sit in this list.
 - No References line - it does not fit the one-page format.
-- Budget for one page: summary 4-5 lines; current role 3-4 lines; previous role 3-4 lines; education 2 lines; projects ~6 lines; certifications up to 6 lines. The page should end in the bottom quarter, not mid-page; restore cut content if it ends above ~70%.
+- Budget for one page: headline 1 line; summary 3 lines; skills 3-4 lines; Profound 3 bullets; Banco de Bogotá 4 bullets; education 3 lines; optional 1 project line; certifications up to 6 lines. The page should end in the bottom quarter, not mid-page; restore cut content if it ends above ~70%.
 
 ## Known pitfalls
 
 - Date ranges must use an ASCII hyphen (`Jan 2025 - Jan 2026`), never `--`: an en-dash next to a year breaks ATS date import (`verify_pdf.py --ascii-dates`). `--` is fine in entry titles (`Company -- Team`).
-- `\cventry` already calls `\needspace{4\baselineskip}`; on a one-page CV a spill to page 2 means content must be cut (relevance-weighted cutting), never shrink geometry or font size.
+- `\cventry` already calls `\needspace{5\baselineskip}`; on a one-page CV a spill to page 2 means content must be cut (relevance-weighted cutting), never shrink geometry or font size.
 - `\MakeUppercase` is applied by titlesec's last format argument; do not put it in the first (format) argument - that breaks compile with `\ttl@row@i` errors.
-- The page fills fast: summary (4-5 lines) + 4 skills lines + 2 role paragraphs + 2 project lines + 6 certifications is the full budget. A multi-line `\cventry` project block or 2-line skills items push Projects onto page 2; prefer one-line `\cvline` projects.
-- `\cventry` titles wrap inside an 80%-width box and the date is an unbreakable `\mbox`, so a long Spanish title wraps instead of splitting the date.
-- Wrap words that must not hyphenate (e.g. `\mbox{Sobresaliente}`); Spanish text has no babel hyphenation patterns loaded.
+- The page fills fast: headline + 3-line summary + 3 skills lines + 3+4 bullets + 3-line education + 5 certifications ends around 80% of the page (measured 3 Nov 2026). Room left over goes to one project line or a 4th Profound bullet, not to a longer summary.
+- `\cventry` puts the role and date on one line with no wrapping box: a role argument that is too long collides with the date. Shorten the role, move detail to the employer line.
+- Spanish text has no hyphenation patterns, so LaTeX can split words badly (`cumpli-miento`). Check the PDF and wrap the offending word in `\mbox{}`.
 - `pdftotext -layout` may space out the large name (`CARLOS HERNANDO    LOZANO`); harmless for ATS.
 - `verify_layout.py` thresholds are calibrated for the stock 2-page moderncv layout; on this template only the hole and bottom-whitespace checks matter.
