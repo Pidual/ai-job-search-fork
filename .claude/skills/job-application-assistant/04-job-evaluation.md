@@ -112,9 +112,9 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-1. **GRC / Information Security Analyst** (ALL-IN focus from 30 Oct 2026) - ISO 27001, SOC 2, compliance, risk, audit, IT audit, third-party risk. IT support / help desk / NOC / sysadmin roles are dropped: score them 0-39 on Career Alignment
-2. **Cloud Security / AWS** (strongest desire) - roles that put AWS hands-on work into production; GRC roles with cloud scope score higher
-3. **SOC Analyst** (also interested) - monitoring, SIEM, detection
+1. **Information Security governance / GRC - the ONLY target (hyper-focus from 3 Nov 2026)** - ISO 27001 / SGSI, SOC 2, security compliance, IT/technology risk, IT audit, third-party risk, security policy and governance (CISO office). GRC roles with cloud scope (cloud compliance, cloud GRC) score at the top of the band
+2. **Off-target - score 20-40 on Career Alignment:** SOC / monitoring analyst, security engineering, vulnerability management, IAM administration, cloud security engineering - unless the role is predominantly governance, risk or compliance work despite its title
+3. **Dropped - score 0-29 on Career Alignment:** IT support / help desk / NOC / sysadmin (since 30 Oct 2026)
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
 - Tasks that energize: truly mission-critical systems; fixing, building, improving and "making and destroying" things; automation; hands-on cloud and security engineering

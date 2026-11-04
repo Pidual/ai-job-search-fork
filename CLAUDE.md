@@ -39,10 +39,11 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 - **Aprendiz Practicante Empresarial (Business Intern)** (Jan 2025 - Jan 2026) - **Banco de Bogotá, Security & Cybersecurity CoE** (Bogotá, Colombia)
   - Built SGSI+ on Power Apps, Power Automate, SharePoint, Power BI: 1,361 evidence requests, 90.4% delivery rate, 9 automated workflows, recognized by the external auditor
   - ISO/IEC 27001:2022 ISMS evidence validation, control reviews, findings and action-plan tracking
+  - Supported SOX and SARO (operational risk, SFC) controls with the same evidence and control-review method
   - Power BI data modeling (Power Query, star schema) for compliance dashboards
 
 ### Technical Skills
-- **Primary:** ISO/IEC 27001:2022, SOC 2, Vanta, GRC evidence and control management, Microsoft Power Platform (Power Apps, Power Automate, Power BI, SharePoint)
+- **Primary:** ISO/IEC 27001:2022, SOC 2, SOX and SARO controls (bank), Vanta, GRC evidence and control management, Microsoft Power Platform (Power Apps, Power Automate, Power BI, SharePoint)
 - **Secondary:** AWS (IAM, VPC, KMS, S3, Lambda, CloudWatch, CloudFormation - lab level), ELK Stack, Nessus, OpenVAS, Wireshark, Nmap, Kali Linux, OPNsense, Python, SQL, Java/Spring Boot, Docker, Terraform (basic), basic Active Directory
 - **Domain:** Information security governance, risk and compliance; banking and SaaS compliance
 - **Software:** Vanta, Power Platform, Proxmox VE, PyTorch, ONNX, Git, Linux, Claude Code
@@ -73,14 +74,14 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 - Cloud security and hands-on AWS work
 
 ### Target Sectors
-- **Current focus (from 30 Oct 2026): ALL IN on GRC / Information Security** - banks, fintech, SaaS and tech companies with SOC 2 / ISO 27001 programs, consultancies (Big Four, MSSPs). IT support / help desk / NOC / sysadmin roles are dropped - do not target them
-- Cloud security: AWS-heavy tech companies, cloud consultancies
-- SOC: MSSPs, banks, telecoms
+- **Current focus (hyper-focus from 3 Nov 2026): Information Security governance and GRC ONLY** - ISO 27001 / SGSI, SOC 2, security compliance, IT/technology risk, IT audit, third-party risk, security policy and governance (CISO office). Employers: banks, fintech, SaaS and tech companies with SOC 2 / ISO 27001 programs, consultancies (Big Four, GRC/risk consultancies)
+- **Not targeted:** SOC / monitoring analyst, security engineering, vulnerability management, cloud security engineering, IT support / help desk / NOC / sysadmin. A cloud role counts only when it is compliance / governance (cloud GRC, cloud compliance)
 
 ### Deal-breakers
 - Pay below COP 3,200,000/month
 - Predominantly repetitive work with no growth path
 - IT support, help desk, NOC and junior sysadmin roles (dropped 30 Oct 2026 - GRC only)
+- SOC, security engineering, vulnerability management and cloud security engineering roles (dropped 3 Nov 2026 - InfoSec/GRC only)
 
 ## Repo Structure
 - `cv/` - LaTeX CVs: `cv/drafts/` = not yet submitted (where `/apply` writes), `cv/sent/` = submitted (`/outcome` and `/gmail-sync` move a CV here when its tracker row leaves `drafted`); `cv/main_example.tex` stays in `cv/`

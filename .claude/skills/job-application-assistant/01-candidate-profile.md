@@ -17,7 +17,7 @@ CompTIA certificate, EPAM/Syndicate activity export) plus the candidate's own co
 - **GitHub:** https://github.com/Pidual
 - **Status:** Open to work, available immediately. Most recent role: Information Security Analyst at Profound (contracted through OperationsArmy), remote, Sep 2026 - Oct 2026; the engagement ended in Oct 2026 (candidate was let go, reported 2026-10-26)
 - **Professional standing:** Profesional universitario in Colombia, holds a tarjeta profesional
-- **Current target (from 30 Oct 2026):** ALL IN on GRC / Information Security (ISO 27001, SOC 2, compliance, risk, audit). IT support / help desk / NOC / sysadmin roles are dropped. Cloud security and SOC remain secondary interests.
+- **Current target (hyper-focus from 3 Nov 2026, candidate: "My only option is GRC"):** Information Security governance and GRC only (ISO 27001 / SGSI, SOC 2, security compliance, IT/technology risk, IT audit, third-party risk, security policy). SOC / monitoring, security engineering, vulnerability management and cloud security engineering roles are no longer targeted (cloud only when it is cloud compliance / GRC). IT support / help desk / NOC / sysadmin stay dropped (since 30 Oct 2026).
 - **Constraints:** Open to on-site or hybrid work in any city in Colombia; remote strongly preferred. Prefers long-term positions but accepts fixed-term / project contracts while job hunting (the Profound role was an independent-contractor engagement and has ended).
 
 ### Languages
@@ -50,6 +50,7 @@ Remote (US company), full-time, independent contractor. Engagement ended Oct 202
 Bogotá, Colombia - Security & Cybersecurity Center of Excellence (area 9030 COE SEG Y CIBERS). Apprenticeship contract, converted to a special employment contract on 25 Jun 2025 (Ley 2466 de 2025).
 - Designed and built **SGSI+** (thesis project) on Power Apps, Power Automate, SharePoint and Power BI to automate ISO/IEC 27001:2022 control and documentary audit processes, replacing a spreadsheet-based workflow: **1,361 evidence requests processed, 90.4% delivery rate, 9 automated Power Automate workflows**, recognized by the external auditor
 - Supported the bank's ISMS under ISO/IEC 27001:2022: validated audit evidence, reviewed security controls, tracked findings and action plans with other departments
+- Also supported **SOX** and **SARO** (Sistema de Administración de Riesgo Operativo, the operational-risk framework required by Colombia's Superintendencia Financiera) controls, using the same evidence-and-control-review method as ISO 27001 (confirmed by the candidate 2026-11-03). **Claim level:** "supported SOX and SARO control evidence and reviews". Do not claim SOX testing leadership, SoD analysis, financial-system ITGC design, or SARO risk-matrix ownership unless the candidate confirms it.
 - Power BI data analysis and modeling for the compliance team: data cleaning and transformation with Power Query, star-schema models consolidating multiple sources, compliance reports and indicator dashboards
 - Worked in agile teams, gathering requirements with business areas
 - **Official title is "Aprendiz Practicante Empresarial".** English: "Business Intern". Never "Analyst".
@@ -64,6 +65,7 @@ Bogotá, Colombia - Security & Cybersecurity Center of Excellence (area 9030 COE
 
 ### Security & GRC
 - **ISO/IEC 27001:2022** (ISMS evidence, control reviews, findings tracking - bank + Profound), **SOC 2** (Profound), **Vanta**
+- **SOX** and **SARO** controls (supported evidence and control reviews at Banco de Bogotá, same method as ISO 27001)
 - Evidence and control management, security policy and procedure documentation, audit support
 - CompTIA Security+ knowledge base; threat intelligence fundamentals (arcX FTIA)
 - Tools (homelab level): Nessus, OpenVAS, Wireshark, Nmap, Kali Linux, Metasploit, Burp Suite, ELK Stack (SIEM), OPNsense; FortiGate (familiarity)

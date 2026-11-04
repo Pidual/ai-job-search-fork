@@ -1,0 +1,69 @@
+[
+  {
+    "name": "CI&T",
+    "careers_url": "https://jobs.lever.co/ciandt",
+    "ats": "lever",
+    "ats_id": "ciandt",
+    "locations_filter": [
+      "Colombia",
+      "Bogot",
+      "Medell",
+      "LATAM"
+    ],
+    "notes": "Has hired Senior GRC Security Specialists remote from Colombia. Verified 2026-11-03: 147 postings, 21 Colombia."
+  },
+  {
+    "name": "Clara",
+    "careers_url": "https://job-boards.greenhouse.io/clara",
+    "ats": "greenhouse",
+    "ats_id": "clara",
+    "locations_filter": [
+      "Colombia",
+      "Bogot",
+      "Medell",
+      "LATAM",
+      "Latin"
+    ],
+    "notes": "LatAm fintech with a Bogota office. Verified 2026-11-03: 156 postings, 34 Colombia."
+  },
+  {
+    "name": "Twilio",
+    "careers_url": "https://job-boards.greenhouse.io/twilio",
+    "ats": "greenhouse",
+    "ats_id": "twilio",
+    "locations_filter": [
+      "Colombia",
+      "Bogot",
+      "Medell",
+      "LATAM",
+      "Latin"
+    ],
+    "notes": "SaaS with SOC 2 / ISO 27001 program; hires remote in Colombia. Verified 2026-11-03: 10 Colombia/LATAM postings."
+  },
+  {
+    "name": "Wizeline",
+    "careers_url": "https://job-boards.greenhouse.io/wizeline",
+    "ats": "greenhouse",
+    "ats_id": "wizeline",
+    "locations_filter": [
+      "Colombia",
+      "Bogot",
+      "Medell",
+      "LATAM",
+      "Latin"
+    ],
+    "notes": "Tech consultancy with Colombia presence. Verified 2026-11-03."
+  },
+  {
+    "name": "Endava",
+    "careers_url": "https://jobs.smartrecruiters.com/Endava",
+    "ats": "smartrecruiters",
+    "ats_id": "Endava",
+    "locations_filter": [
+      "Colombia",
+      "Bogot",
+      "Medell"
+    ],
+    "notes": "Tech consultancy, Bogota/Medellin offices. Verified 2026-11-03: 4 Colombia postings."
+  }
+]
