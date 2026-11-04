@@ -1,7 +1,7 @@
-% One-page CV template "onepage-blue"
+% One-page CV template "onepage-blue" (v2 - bullets)
 % Plain article class, Helvetica-style sans (TeX Gyre Heros), moderncv blue
-% accents on the name, section headings and rules. Single column, so the ATS
-% text layer reads top to bottom in visual order.
+% accents on the name, section headings, rules and employer lines. Single
+% column, so the ATS text layer reads top to bottom in visual order.
 % Compile: lualatex (fontspec). Hard limit: exactly 1 page.
 \documentclass[10pt,letterpaper]{article}
 
@@ -12,6 +12,7 @@
 \usepackage{xcolor}
 % moderncv "blue" color1 (rgb 0.22,0.45,0.70)
 \definecolor{cvblue}{rgb}{0.22,0.45,0.70}
+\definecolor{cvgray}{rgb}{0.35,0.35,0.35}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage{needspace}
@@ -35,15 +36,18 @@
     [\vspace{-0.4ex}{\color{cvblue}\titlerule[0.6pt]}]
 \titlespacing*{\section}{0pt}{9pt}{5pt}
 
-% \cventry{Bold title}{Right-aligned date}
-% Keeps the title line together with at least three lines of its body.
-% A long title wraps inside its own box; the date never breaks.
-\newcommand{\cventry}[2]{%
-    \needspace{4\baselineskip}%
-    \par\noindent\parbox[t]{0.8\textwidth}{\raggedright\textbf{#1}}%
-    \hfill\mbox{#2}\par\nopagebreak\vspace{2pt}}
-% \cvdesc{Paragraph describing the entry}
-\newcommand{\cvdesc}[1]{#1\par\vspace{4pt}}
+% \cventry{Role / degree}{Employer -- location}{Start - End}
+% Line 1: bold role, date right-aligned. Line 2: employer in blue.
+% Keep #1 short enough for one line; put team/location in #2, never in #1.
+\newcommand{\cventry}[3]{%
+    \needspace{5\baselineskip}%
+    \par\noindent\textbf{#1}\hfill\mbox{#3}\par\nopagebreak
+    \noindent{\color{cvblue}#2}\par\nopagebreak\vspace{1pt}}
+% \begin{cvbullets} \item ... \end{cvbullets} - 3 to 4 bullets per role,
+% each one printed line (two at most), verb first, a number where possible.
+\newenvironment{cvbullets}
+    {\begin{itemize}[leftmargin=1.2em,topsep=1pt,itemsep=1pt,parsep=0pt,label={\color{cvblue}\textbullet}]}
+    {\end{itemize}\vspace{4pt}}
 % \cvline{Bold title}{inline description}{date} - one-line items
 \newcommand{\cvline}[3]{%
     \noindent\parbox[t]{0.89\textwidth}{\raggedright\textbf{#1} -- #2}%
@@ -53,38 +57,50 @@
 % \cvcert{Certification}{Date}
 \newcommand{\cvcert}[2]{\noindent\textbf{#1}\hfill #2\par}
 
-\setlist[itemize]{leftmargin=1.2em,topsep=1pt,itemsep=0pt,parsep=0pt}
-
 \begin{document}
 
 % ---------- Header ----------
 {\fontsize{22}{26}\selectfont\bfseries\color{cvblue}\MakeUppercase{[YOUR_NAME]}\par}
-\vspace{6pt}
+\vspace{2pt}
+{\large [TARGET_TITLE - the posting's role title or closest truthful equivalent]\par}
+\vspace{4pt}
 \textbf{Email:} \href{mailto:[YOUR_EMAIL]}{[YOUR_EMAIL]} \quad | \quad \textbf{Phone:} [YOUR_PHONE]\par
 \textbf{GitHub:} \href{https://[YOUR_GITHUB]}{[YOUR_GITHUB]} \quad | \quad \textbf{LinkedIn:} \href{https://[YOUR_LINKEDIN]}{[YOUR_LINKEDIN]}\par
 
 % ---------- Summary ----------
 \section{Professional Summary}
-[PROFILE_STATEMENT - 4 to 5 lines, tailored to the posting]\par
+[PROFILE_STATEMENT - 3 lines max: who you are, the 2-3 frameworks/tools the posting asks for, one headline result. Do not repeat the bullets.]\par
+
+% ---------- Skills ----------
+\section{Skills}
+\cvskill{[LABEL]}{[items]}
+\cvskill{[LABEL]}{[items]}
+\cvskill{[LABEL]}{[items]}
 
 % ---------- Experience ----------
 \section{Experience}
-\cventry{[COMPANY] -- [TEAM] -- [COUNTRY]}{[START] - [END]}
-\cvdesc{[One paragraph, 3 to 4 lines: what you did and the outcome, using the posting's own terms.]}
+\cventry{[ROLE]}{[COMPANY] -- [TEAM] -- [LOCATION]}{[START] - [END]}
+\begin{cvbullets}
+    \item [Verb + what + result, posting's own terms]
+    \item [...]
+    \item [...]
+\end{cvbullets}
 
-\cventry{[COMPANY] -- [TEAM] -- [COUNTRY]}{[START] - [END]}
-\cvdesc{[One paragraph, 3 to 4 lines.]}
+\cventry{[ROLE]}{[COMPANY] -- [TEAM] -- [LOCATION]}{[START] - [END]}
+\begin{cvbullets}
+    \item [...]
+    \item [...]
+    \item [...]
+    \item [...]
+\end{cvbullets}
 
 % ---------- Education ----------
 \section{Education}
-\cventry{[DEGREE]}{[START] - [END]}
-[UNIVERSITY]\par
+\cventry{[DEGREE]}{[UNIVERSITY], [CITY]}{[START] - [END]}
+[One line: GPA, thesis, honours]\par
 
-% ---------- Projects ----------
+% ---------- Projects (optional - only if relevant to the posting) ----------
 \section{Projects}
-\cventry{[FLAGSHIP PROJECT]}{[YEAR]}
-\cvdesc{[One paragraph, 2 to 3 lines.]}
-\cvline{[SHORT PROJECT]}{[one-line description]}{[YEAR]}
 \cvline{[SHORT PROJECT]}{[one-line description]}{[YEAR]}
 
 % ---------- Certifications ----------
