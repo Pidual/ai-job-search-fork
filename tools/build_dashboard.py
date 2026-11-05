@@ -211,6 +211,32 @@ def build(out_path):
     def cell(v):
         return e(v) if v else "—"
 
+    def cv_link(r):
+        # Link to the compiled CV PDF next to the .tex (relative to reports/).
+        f = r["cv_file"]
+        if not f:
+            return "—"
+        pdf = f[:-4] + ".pdf" if f.lower().endswith(".tex") else f
+        if not os.path.exists(os.path.join(ROOT, pdf)):
+            return cell(os.path.basename(f))
+        href = "../" + pdf.replace("\\", "/")
+        return f'<a href="{e(href)}" target="_blank">PDF ↗</a>'
+
+    drafts = [r for r in rows_sorted if r["bucket"] == "Drafted"]
+    if drafts:
+        drafts_html = ('<section class="panel"><div class="toolbar"><h2>Drafted, not yet sent ('
+                       f'{len(drafts)})</h2></div><div class="tbl"><table><thead><tr>'
+                       '<th>Date</th><th>Company</th><th>Role</th><th>Fit</th><th>CV</th><th>Source</th>'
+                       '</tr></thead><tbody>' + "".join(
+                           f'<tr data-status="Drafted" data-sector="{e(r["sector"])}" data-search="{e(" ".join([r["company"], r["role"], r["sector"]]).lower())}">'
+                           f'<td>{cell(r["date"])}</td><td>{cell(r["company"])}</td><td>{cell(r["role"])}</td>'
+                           f'<td class="fit">{cell(r["fit_rating"])}</td><td>{cv_link(r)}</td><td>'
+                           + (f'<a href="{e(r["source"])}" target="_blank" rel="noopener noreferrer">link ↗</a>'
+                              if r["source"].lower().startswith("http") else cell(r["source"]))
+                           + '</td></tr>' for r in drafts) + '</tbody></table></div></section>')
+    else:
+        drafts_html = ""
+
     body = []
     for r in rows_sorted:
         notes = r["notes"]
@@ -225,16 +251,16 @@ def build(out_path):
             f'<td>{cell(r["date"])}</td>' + (f'<td>{cell(r["deadline"])}</td>' if show_deadline else "")
             + f'<td>{cell(r["company"])}</td><td>{cell(r["role"])}</td><td>{cell(r["sector"])}</td>'
             f'<td>{cell(r["channel"])}</td><td><span class="pill" style="--c:{COLORS[r["bucket"]]}">{r["bucket"]}</span></td>'
-            f'<td class="fit">{cell(r["fit_rating"])}</td><td>{notes_html}</td><td>{src_html}</td></tr>')
+            f'<td class="fit">{cell(r["fit_rating"])}</td><td>{cv_link(r)}</td><td>{notes_html}</td><td>{src_html}</td></tr>')
 
     status_opts = "".join(f"<option>{b}</option>" for b in BUCKETS if counts[b])
     sectors = sorted({r["sector"] for r in rows}, key=str.lower)
     sector_opts = "".join(f'<option value="{e(s)}">{e(s) if s else "(none)"}</option>' for s in sectors)
     head = "<th>Date</th>" + ("<th>Deadline</th>" if show_deadline else "") + \
-        "<th>Company</th><th>Role</th><th>Sector</th><th>Channel</th><th>Status</th><th>Fit</th><th>Notes</th><th>Source</th>"
+        "<th>Company</th><th>Role</th><th>Sector</th><th>Channel</th><th>Status</th><th>Fit</th><th>CV</th><th>Notes</th><th>Source</th>"
 
     page = TEMPLATE.format(today=today, cards=cards_html, charts=charts, status_opts=status_opts,
-                           sector_opts=sector_opts, head=head, body="".join(body))
+                           sector_opts=sector_opts, head=head, body="".join(body), drafts=drafts_html)
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     tmp = out_path + ".tmp"
     with open(tmp, "w", encoding="utf-8", newline="\n") as f:
@@ -290,6 +316,7 @@ footer{{text-align:center;color:var(--muted);font-size:12px;margin-top:20px}}
 <section class="charts">
 {charts}
 </section>
+{drafts}
 <section class="panel">
 <div class="toolbar"><h2>Applications</h2>
 <select id="fStatus" aria-label="Filter by status"><option value="">All statuses</option>{status_opts}</select>

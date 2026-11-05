@@ -27,8 +27,8 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ### Education
 - **Ingeniero de Sistemas y Computación (B.Sc. Systems and Computer Engineering)** (2020-2026, awarded 9 Jul 2026) - Universidad Pedagógica y Tecnológica de Colombia (UPTC), Tunja
-  - GPA 3.8/5.0. Holds a Colombian tarjeta profesional.
-  - Thesis / Práctica Empresarial (graded Sobresaliente): SGSI+, ISO/IEC 27001 audit automation platform at Banco de Bogotá
+  - GPA 3.8/5.0 (**never put the GPA on a CV** - candidate rule, 4 Nov 2026). Holds a Colombian tarjeta profesional.
+  - Thesis / Práctica Empresarial (graded Sobresaliente): SGSI+, ISO/IEC 27001 audit automation platform at Banco de Bogotá (**never mention the Sobresaliente grade or the práctica as an education line on a CV** - candidate rule, 4 Nov 2026; SGSI+ already appears under experience)
   - Topics: systems auditing, distributed systems, operating systems, data networks, software engineering, databases
 
 ### Professional Experience

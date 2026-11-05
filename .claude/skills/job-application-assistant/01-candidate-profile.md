@@ -33,6 +33,8 @@ CompTIA certificate, EPAM/Syndicate activity export) plus the candidate's own co
 |--------|--------|-------------|------------|
 | Ingeniero de Sistemas y Computación (B.Sc. Systems and Computer Engineering) | Jan 2020 - Jul 2026 (awarded 9 Jul 2026) | Universidad Pedagógica y Tecnológica de Colombia (UPTC), Tunja | GPA 3.8/5.0. Auditoría de Sistemas (4.4), Sistemas Distribuidos (4.3), Sistemas Operativos (4.1), Redes de Datos (3.9), Transmisión de Datos, Ingeniería de Software I/II, Bases de Datos I/II, Inteligencia Computacional. Graduation requirement: Práctica Empresarial con Nota Sobresaliente (the Banco de Bogotá internship / SGSI+ thesis). |
 
+**Do not put the GPA (3.8/5.0) on any CV** (candidate decision, 4 Nov 2026). **Do not mention the práctica empresarial / thesis grade ("Sobresaliente") on CVs either** (candidate: "eso nada que ver", 4 Nov 2026); SGSI+ is already shown under Banco de Bogotá experience. It stays here as a fact for application forms that ask for it explicitly.
+
 **English translation to use on CVs:** "B.Sc. Systems and Computer Engineering". Do NOT translate as "Computer Science" or "Software Engineering".
 
 ## Professional Experience
