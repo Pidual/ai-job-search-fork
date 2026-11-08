@@ -77,7 +77,7 @@ Bogotá, Colombia - Security & Cybersecurity Center of Excellence (area 9030 COE
 - **ISO/IEC 27001:2022** (ISMS evidence, control reviews, findings tracking - bank + Profound), **SOC 2** (Profound), **Vanta**
 - **SOX** and **SARO** controls (supported evidence and control reviews at Banco de Bogotá, same method as ISO 27001)
 - Evidence and control management, security policy and procedure documentation, audit support
-- CompTIA Security+ knowledge base; threat intelligence fundamentals (arcX FTIA)
+- CompTIA Security+ knowledge base; threat intelligence fundamentals (arcX FTIA - not for CVs, see Certifications)
 - Tools (homelab level): Nessus, OpenVAS, Wireshark, Nmap, Kali Linux, Metasploit, Burp Suite, ELK Stack (SIEM), OPNsense; FortiGate (familiarity)
 
 ### Cloud (AWS)
@@ -98,10 +98,10 @@ Bogotá, Colombia - Security & Cybersecurity Center of Excellence (area 9030 COE
 
 ## Certifications
 - **CompTIA Security+ ce (SY0-701)** - certified 4 Jun 2026, valid through 4 Jun 2029 - https://www.credly.com/badges/485adf76-e28e-4540-8a77-276ecb24b6d0/linked_in_profile
-- **EPAM Cloud Mentor University - AWS (Cloud Platform Engineer Program LatAm)** - 2026: all 39 hands-on AWS labs completed (the Syndicate platform shows 38 in this course because a bug moved the last completed lab into the separate "CloudX Associate: AWS DevOps 2.0" course; keep a screenshot of both), score 3460/3900 (pass 3440), **2nd place on the course leaderboard**; certificate expected Dec 2026 (state "expected" until issued)
+- **EPAM Cloud Mentor University - AWS (Cloud Platform Engineer Program LatAm)** - 2026: all 39 hands-on AWS labs completed (the Syndicate platform shows 38 in this course because a bug moved the last completed lab into the separate "CloudX Associate: AWS DevOps 2.0" course; keep a screenshot of both), score 3460/3900 (pass 3440), **2nd place on the course leaderboard**; certificate expected Dec 2026 (state "expected" until issued). **On CVs (candidate decision 2026-11-08): write only "EPAM Cloud Mentorship Specialization"** - never the lab count (39) or the leaderboard place (2nd); those details stay here for interviews and forms only.
 - **Deep Learning Specialization** - DeepLearning.AI / Coursera - Nov 2025 - https://www.coursera.org/account/accomplishments/specialization/8HCZD7Y1AMZC
 - **Back End Development and APIs** - freeCodeCamp - Dec 2024 - https://www.freecodecamp.org/certification/Pidual/back-end-development-and-apis
-- **Foundation Level Threat Intelligence Analyst (FTIA)** - arcX - Nov 2024
+- **Foundation Level Threat Intelligence Analyst (FTIA)** - arcX - Nov 2024. **Never put it on a CV** (candidate decision 2026-11-08: "no tiene peso alguno"), neither as a certification nor as "threat intelligence (FTIA)" in a summary or skills line.
 - **EF SET English Certificate 75/100 (C2 Proficient)** - Nov 2024 - https://cert.efset.org/en/hzQH9H
 - Basic Image Classification with TensorFlow (Coursera guided project, Jun 2023); Create Your First Web App with Python and Flask (Coursera, Jul 2023)
 

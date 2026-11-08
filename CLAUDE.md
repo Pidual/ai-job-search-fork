@@ -51,9 +51,9 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ### Certifications
 - **CompTIA Security+ ce (SY0-701)** - completed Jun 2026 (valid to Jun 2029)
-- **EPAM Cloud Mentor University - AWS** - all 39 labs completed, 2nd on leaderboard, certificate expected Dec 2026
+- **EPAM Cloud Mentor University - AWS** - all 39 labs completed, 2nd on leaderboard, certificate expected Dec 2026. **On CVs write only "EPAM Cloud Mentorship Specialization"** - no lab count, no leaderboard place (candidate rule, 8 Nov 2026)
 - **Deep Learning Specialization** (DeepLearning.AI) - Nov 2025
-- **Foundation Level Threat Intelligence Analyst (arcX FTIA)** - Nov 2024
+- **Foundation Level Threat Intelligence Analyst (arcX FTIA)** - Nov 2024. **Never on a CV** (candidate rule, 8 Nov 2026)
 - **Back End Development and APIs** (freeCodeCamp) - Dec 2024
 - **EF SET English 75/100 (C2)** - Nov 2024
 
