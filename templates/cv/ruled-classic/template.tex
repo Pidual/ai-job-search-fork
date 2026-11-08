@@ -1,0 +1,98 @@
+% ruled-classic CV template (rebuilt 2026-11-07 from the candidate's CV_CARLOS_LOZANO_GRC.pdf)
+% Single column, Latin Modern (Computer Modern look), centered name, ruled section headings,
+% bold role + right-aligned bold dates, italic employer + grey right-aligned location.
+% Compile with lualatex (see TEMPLATE.md).
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[margin=0.55in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{fontspec}            % lualatex: Latin Modern is the default font
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{needspace}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{linkblue}{rgb}{0.10,0.30,0.65}
+\definecolor{locgrey}{gray}{0.45}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+\raggedbottom
+
+% Section headings: bold, \large, full-width rule underneath
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\vspace{-6pt}\rule{\textwidth}{0.5pt}]
+\titlespacing*{\section}{0pt}{7pt}{5pt}
+
+% Underlined blue link, as in the source PDF
+\newcommand{\ulink}[2]{\href{#1}{\textcolor{linkblue}{\underline{#2}}}}
+
+% \cventry{Role}{Mon YYYY - Mon YYYY}{Employer}{Location}
+% Dates MUST be ASCII-hyphen ranges (ATS date import).
+\newcommand{\cventry}[4]{%
+  \needspace{5\baselineskip}%
+  \begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{#1} & \textbf{#2} \\
+    \textit{#3} & \textcolor{locgrey}{#4} \\
+  \end{tabularx}\par\vspace{1pt}}
+
+\newenvironment{cvbullets}{%
+  \begin{itemize}[leftmargin=12pt,label=\textbullet,itemsep=0pt,parsep=0pt,topsep=1pt]\small}%
+  {\end{itemize}\vspace{3pt}}
+
+% \cvskill{Label}{items}
+\newcommand{\cvskill}[2]{\textbf{#1:} #2\par}
+
+\begin{document}
+
+%----- HEADER -----
+\begin{center}
+  {\LARGE\bfseries [YOUR_NAME]}\\[3pt]
+  \small [HEADLINE] \ \textbar\ \ulink{mailto:[YOUR_EMAIL]}{[YOUR_EMAIL]} \ \textbar\ [YOUR_PHONE] \ \textbar\ \ulink{https://[YOUR_LINKEDIN_URL]}{[YOUR_LINKEDIN_URL]}
+\end{center}
+\vspace{-6pt}
+
+%----- SUMMARY -----
+\section{Summary}
+{\small [SUMMARY - 4-5 printed lines]\par}
+
+%----- EXPERIENCE -----
+\section{Experience}
+\cventry{[ROLE]}{[Mon YYYY - Mon YYYY]}{[EMPLOYER]}{[LOCATION]}
+\begin{cvbullets}
+  \item [BULLET]
+  \item [BULLET]
+  \item [BULLET]
+\end{cvbullets}
+
+%----- EDUCATION -----
+\section{Education}
+\needspace{3\baselineskip}
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+  \textbf{[DEGREE]}, [UNIVERSITY] & \textbf{[YYYY - YYYY]} \\
+\end{tabularx}\par
+{\small [OPTIONAL THESIS LINE]\par}
+
+%----- SKILLS -----
+\section{Skills}
+{\small
+\cvskill{[LABEL]}{[ITEMS]}
+\cvskill{[LABEL]}{[ITEMS]}
+\cvskill{Languages}{[LANGUAGES]}
+}
+
+%----- CERTIFICATIONS -----
+\section{Certifications}
+{\small
+[CERT] ([YYYY])\par
+[CERT] ([YYYY])\par
+}
+
+%----- REFERENCES -----
+\section{References}
+{\small
+\textbf{[REF_NAME]} -- [REF_TITLE] \ \textbar\ \ulink{mailto:[REF_EMAIL]}{[REF_EMAIL]}\par
+}
+
+\end{document}

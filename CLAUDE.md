@@ -33,11 +33,12 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ### Professional Experience
 - **Information Security Analyst** (Sep 2026 - Oct 2026) - **Profound, contracted through OperationsArmy** (Remote, US)
-  - Supported SOC 2 and ISO 27001 compliance: control tracking, evidence collection, audit support in Vanta
+  - Supported SOC 2 Type II (200+ controls) and ISO 27001 compliance: control tracking, evidence collection, audit support in Vanta; helped adopt Vanta, configured its AWS integrations and Trust Center
   - Completed customer security questionnaires
   - Maintained security policies and procedures; worked with Engineering, Legal and Product in English
-- **Aprendiz Practicante Empresarial (Business Intern)** (Jan 2025 - Jan 2026) - **Banco de Bogotá, Security & Cybersecurity CoE** (Bogotá, Colombia)
-  - Built SGSI+ on Power Apps, Power Automate, SharePoint, Power BI: 1,361 evidence requests, 90.4% delivery rate, 9 automated workflows, recognized by the external auditor
+- **Aprendiz Practicante Empresarial (Business Intern)** (Jan 2025 - Jan 2026) - **Banco de Bogotá, Security & Cybersecurity CoE** (Bogotá, Colombia). **CV title line: "Cybersecurity Compliance Team"** (candidate decision 7 Nov 2026); official title for forms/background checks
+  - Built SGSI+ (English: ISMS+) on Power Apps, Power Automate, SharePoint, Power BI: 1,361 evidence requests (1,230 delivered, 90.4%), 9 automated workflows; evidence, audit and findings-remediation modules; audit firm called it a strength in a third-party internal pre-audit
+  - Supported the Statement of Applicability and ISO/IEC 27001:2022 control framework design (93 Annex A controls + clauses 4-10)
   - ISO/IEC 27001:2022 ISMS evidence validation, control reviews, findings and action-plan tracking
   - Supported SOX and SARO (operational risk, SFC) controls with the same evidence and control-review method
   - Power BI data modeling (Power Query, star schema) for compliance dashboards
@@ -114,7 +115,7 @@ After creating or updating a CV or cover letter, re-read the generated file and 
 - [ ] Nice-to-have requirements are highlighted where there is a match
 
 ### Consistency
-- [ ] CV follows the active CV template (currently `onepage-blue`, 1 page - see the `ACTIVE-TEMPLATE` block in `05-cv-templates.md`; stock fallback is 2-page moderncv/banking)
+- [ ] CV follows the active CV template (currently `ruled-classic`, 1 page - see the `ACTIVE-TEMPLATE` block in `05-cv-templates.md`; stock fallback is 2-page moderncv/banking)
 - [ ] Cover letter uses cover.cls template and established structure
 - [ ] Tone is consistent across CV and cover letter
 - [ ] No contradictions between CV and cover letter content
@@ -130,7 +131,7 @@ After creating or updating a CV or cover letter, re-read the generated file and 
 ### Compiled PDF verification (MANDATORY - never skip)
 Both documents MUST be compiled and visually inspected via the Read tool on the PDF output. "Looks fine in the .tex" is not acceptable - LaTeX page-break decisions are unpredictable. Iterate until these all pass:
 - [ ] CV compiled with **lualatex** (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors). Cover letter compiled with **xelatex** (cover.cls requires fontspec). If a custom template is active (registered via `/add-template`), compile with its declared command instead — see the `ACTIVE-TEMPLATE` block in `05-cv-templates.md`/`06-cover-letter-templates.md`.
-- [ ] **CV matches the active template's page limit exactly** - currently **1 page** (`onepage-blue`); 2 pages only for the stock moderncv template
+- [ ] **CV matches the active template's page limit exactly** - currently **1 page** (`ruled-classic`); 2 pages only for the stock moderncv template
 - [ ] **No orphaned `\cventry` titles** - a job/education title must never sit at the bottom of a page with its bullets spilling to the next page. Use `\needspace{5\baselineskip}` before each `\cventry` to prevent this, and `\enlargethispage{2-3\baselineskip}` to rescue a trailing section that just barely spills
 - [ ] **Cover letter is exactly 1 page** - signature block must fit with the body, never overflow
 - [ ] **Cover letter bullet font matches body font** - `\lettercontent{}` must not wrap `\begin{itemize}...\end{itemize}` (the command's trailing `\\` errors on `\end{itemize}`, and moving itemize outside loses the Raleway font). Standard pattern: close `\lettercontent{}`, then wrap the list in `{\raggedright\fontspec[Path = OpenFonts/fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont \begin{itemize}...\end{itemize}\par}`

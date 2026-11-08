@@ -33,9 +33,9 @@ CompTIA certificate, EPAM/Syndicate activity export) plus the candidate's own co
 |--------|--------|-------------|------------|
 | Ingeniero de Sistemas y Computación (B.Sc. Systems and Computer Engineering) | Jan 2020 - Jul 2026 (awarded 9 Jul 2026) | Universidad Pedagógica y Tecnológica de Colombia (UPTC), Tunja | GPA 3.8/5.0. Auditoría de Sistemas (4.4), Sistemas Distribuidos (4.3), Sistemas Operativos (4.1), Redes de Datos (3.9), Transmisión de Datos, Ingeniería de Software I/II, Bases de Datos I/II, Inteligencia Computacional. Graduation requirement: Práctica Empresarial con Nota Sobresaliente (the Banco de Bogotá internship / SGSI+ thesis). |
 
-**Do not put the GPA (3.8/5.0) on any CV** (candidate decision, 4 Nov 2026). **Do not mention the práctica empresarial / thesis grade ("Sobresaliente") on CVs either** (candidate: "eso nada que ver", 4 Nov 2026); SGSI+ is already shown under Banco de Bogotá experience. It stays here as a fact for application forms that ask for it explicitly.
+**Do not put the GPA (3.8/5.0) on any CV** (candidate decision, 4 Nov 2026). **Do not mention the práctica empresarial / thesis grade ("Sobresaliente") on CVs either** (candidate: "eso nada que ver", 4 Nov 2026); SGSI+ is already shown under Banco de Bogotá experience. **A thesis-title line without the grade is fine** (candidate's own CV, 2026-11-07): "Thesis: Automation of controls and documentation processes for NTC-ISO/IEC 27001:2022 audits using Power Platform". English degree name used in that CV: "B.S. in Systems and Computing Engineering". The grade stays here as a fact for application forms that ask for it explicitly.
 
-**English translation to use on CVs:** "B.Sc. Systems and Computer Engineering". Do NOT translate as "Computer Science" or "Software Engineering".
+**English translation to use on CVs:** "B.Sc. Systems and Computer Engineering" (the candidate's own 2026-11-07 CV writes "B.S. in Systems and Computing Engineering" - both acceptable). Do NOT translate as "Computer Science" or "Software Engineering".
 
 ## Professional Experience
 
@@ -44,7 +44,8 @@ Remote (US company), full-time, independent contractor. Engagement 1 Sep - 22 Oc
 - Supported SOC 2 and ISO 27001 compliance: tracking security controls, collecting evidence and assisting audits, using Vanta to monitor progress per framework
 - Maintained and documented security policies and procedures
 - Worked with Engineering, Legal and Product to gather and validate security information, in an English-speaking remote environment
-- Completed customer security questionnaires (confirmed by the candidate 2026-10-25; specific formats such as SIG/CAIQ/VSA not confirmed - say "customer security questionnaires" only)
+- Completed customer security questionnaires (confirmed by the candidate 2026-10-25; specific formats such as SIG/CAIQ/VSA not confirmed - say "customer security questionnaires" only), including questionnaires from customers' vendor risk assessments
+- **Confirmed by the candidate 2026-11-07 (from their own CV_CARLOS_LOZANO_GRC.pdf):** the program was **SOC 2 Type II**, covering **200+ controls** across infrastructure, application and organizational domains; **helped adopt Vanta** for automated compliance monitoring and evidence collection; **configured Vanta's AWS integrations** so evidence was gathered continuously instead of right before audits; **configured the Vanta Trust Center** to streamline customer and vendor security reviews
 - **Not confirmed - do not claim:** HIPAA, RFP/RFI responses, risk assessments, third-party/vendor risk management, risk-register ownership (these appear in the offer-letter scope or postings but the candidate has not confirmed doing them)
 - **CV phrasing:** "Information Security Analyst -- Profound (via OperationsArmy) -- Remote". Do not claim healthcare-sector experience.
 
@@ -55,7 +56,14 @@ Bogotá, Colombia - Security & Cybersecurity Center of Excellence (area 9030 COE
 - Also supported **SOX** and **SARO** (Sistema de Administración de Riesgo Operativo, the operational-risk framework required by Colombia's Superintendencia Financiera) controls, using the same evidence-and-control-review method as ISO 27001 (confirmed by the candidate 2026-11-03). **Claim level:** "supported SOX and SARO control evidence and reviews". Do not claim SOX testing leadership, SoD analysis, financial-system ITGC design, or SARO risk-matrix ownership unless the candidate confirms it.
 - Power BI data analysis and modeling for the compliance team: data cleaning and transformation with Power Query, star-schema models consolidating multiple sources, compliance reports and indicator dashboards
 - Worked in agile teams, gathering requirements with business areas
-- **Official title is "Aprendiz Practicante Empresarial".** English: "Business Intern". Never "Analyst".
+- **Confirmed by the candidate 2026-11-07 (from their own CV_CARLOS_LOZANO_GRC.pdf):**
+  - The app is called **SGSI+** in Spanish and **ISMS+** in English. It was created after an external audit found no centralized tool for managing ISO/IEC 27001:2022 controls; built in an agile team with a product manager
+  - Supported the bank's **Statement of Applicability (SoA)** and the design of its ISO/IEC 27001:2022 control framework: the **93 Annex A controls** plus requirement-level controls for **clauses 4-10**, which became the base of ISMS+
+  - **Evidence collection module:** templates, owner assignment, review and rejection workflows. First cycle (2025-2): **1,230 of 1,361** requested evidence items delivered (90.4%)
+  - **Audit module:** plan internal audits, form auditor teams, assign and score controls, record findings. Used in a **third-party internal pre-audit**, where the audit firm called the tool a strength of the process (this is the precise version of "recognized by the external auditor")
+  - **Findings management module:** full remediation lifecycle - owner assignment, action-plan submission and approval, automated deadline reminders, evidence-based closure
+  - Power Automate notification/reminder flows; Power BI dashboards on evidence delivery, compliance by control group, findings by status, type and area
+- **Official title is "Aprendiz Practicante Empresarial"** (use it on application forms and background checks). **On CVs (candidate decision 2026-11-07): title line "Cybersecurity Compliance Team", company line "Banco de Bogotá".** Never "Analyst".
 - **Did NOT do (appeared in old tailored CVs - never claim):** IAM/Active Directory/Kerberos/service-account administration at the bank, AWS IAM at the bank, Microsoft 365 security configuration or help-desk escalations, Python/SQL data processing at the bank, SOC monitoring or incident escalation.
 
 ## Independent Projects
@@ -71,6 +79,9 @@ Bogotá, Colombia - Security & Cybersecurity Center of Excellence (area 9030 COE
 - Evidence and control management, security policy and procedure documentation, audit support
 - CompTIA Security+ knowledge base; threat intelligence fundamentals (arcX FTIA)
 - Tools (homelab level): Nessus, OpenVAS, Wireshark, Nmap, Kali Linux, Metasploit, Burp Suite, ELK Stack (SIEM), OPNsense; FortiGate (familiarity)
+
+### Cloud (AWS)
+- Governance-level AWS (confirmed by the candidate 2026-11-07): **AWS Organizations, Service Control Policies (SCP), Resource Control Policies (RCP), S3 bucket policies, IAM, EC2**; plus Vanta-AWS integrations at Profound
 
 ### Cloud (AWS - hands-on lab level, EPAM program)
 - IAM (managed/inline policies, conditions, policy evaluation logic, group permissions, role chaining), EC2, VPC (custom VPC, cross-region peering, Transit Gateway), ELB, S3 (versioning, lifecycle, KMS customer-managed keys, SQS notifications), Lambda, API Gateway, RDS (Multi-AZ, read replica), DynamoDB, DMS (MySQL to DynamoDB), EFS, ECS / ECS Anywhere, SQS, SNS, EventBridge, Systems Manager, CloudWatch, CloudFormation, CodeBuild/CodeDeploy, billing alarms
@@ -105,4 +116,5 @@ None.
   - Confirms: engagement 1 Sep 2026 - 22 Oct 2026; supported information security operations for a client account; security documentation, questionnaire-related activities, operational workflows; distributed team.
   - Describes him as: attentive to detail, adaptable, strong communicator, learns established processes quickly, professional, collaborative.
   - Reason for leaving (in writing): the client's AI-driven workflow changes reduced staffing and eliminated the position; "not related to his individual performance."
-- **On CVs (decided 2026-11-03):** end every CV with a References section (`\section{Referencias}` for Spanish, `\section{References}` for English) containing one line: `\noindent\textbf{Melissa Letts} -- General Manager, OpsArmy -- \href{mailto:Melissa.Letts@operationsarmy.com}{Melissa.Letts@operationsarmy.com}\par`. Her letter says "Please feel free to contact me." If the page overflows, cut the lowest-relevance line first (e.g. the ResNet50 project, or a certification that duplicates the Languages line). Do not attach the letter unless a posting asks for reference letters.
+- **Martin Gordillo** - Jefe del Equipo de Cumplimiento, GRC, Banco de Bogotá - MGORDIL@bancodebogota.com.co. Agreed reference (candidate confirmed 2026-11-07). **List on every CV** as a second line: `\textbf{Martin Gordillo} -- Jefe del Equipo de Cumplimiento, GRC, Banco de Bogot\'a | MGORDIL@bancodebogota.com.co`.
+- **On CVs (decided 2026-11-03; superseded 2026-11-07 by the two-reference rule above for the second line):** end every CV with a References section (`\section{Referencias}` for Spanish, `\section{References}` for English) containing one line: `\noindent\textbf{Melissa Letts} -- General Manager, OpsArmy -- \href{mailto:Melissa.Letts@operationsarmy.com}{Melissa.Letts@operationsarmy.com}\par`. Her letter says "Please feel free to contact me." If the page overflows, cut the lowest-relevance line first (e.g. the ResNet50 project, or a certification that duplicates the Languages line). Do not attach the letter unless a posting asks for reference letters.
